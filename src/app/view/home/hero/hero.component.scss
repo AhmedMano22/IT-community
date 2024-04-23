@@ -1,0 +1,54 @@
+@import "../../../../assets/scss/colors";
+
+.hero-section {
+  background-color: $floralwhite-color;
+  padding-bottom: 100px;
+  background-image: url("../../../../assets/images/home/background-icons.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  position: relative;
+  .circle{
+    position: absolute;
+    top: 100px;
+    right: 200px;
+    img{
+      width: 200px;
+    }
+  }
+
+  .container {
+    .hero-content {
+
+      background-repeat: no-repeat;
+      background-position: 100% 100%;
+      background-size: 50%;
+      .left-part {
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .right-part {
+        h1 {
+          font-weight: 800;
+          font-size: 69px;
+          line-height: 135%;
+          text-align: right;
+          text-align: start;
+          color: #ff7426;
+        }
+
+        p {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 135%;
+          text-align: right;
+          color: #5d5a6f;
+          text-align: justify;
+        }
+      }
+    }
+  }
+}

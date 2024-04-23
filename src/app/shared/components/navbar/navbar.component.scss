@@ -1,0 +1,67 @@
+@import "../../../../assets/scss/colors";
+
+.navbar {
+  padding: 0;
+  background-color: $floralwhite-color;
+  .nav-container {
+    .navbar-toggler:focus{
+      box-shadow: none;
+    }
+    img {
+      width: 60px;
+    }
+    ul {
+      li {
+        a {
+          color: #000000;
+        }
+        }
+        .switch-item{
+          width: 37px;
+          height: 37px;
+          .switch-lang{
+            color: $wightcolor;
+            text-decoration: none;
+          }
+
+      }
+      .logout{
+        background-color: #9C4DF4;
+        color: $wightcolor;
+      }
+    }
+    @media (max-width:991px) {
+      &{
+
+        .nav-item:last-child{
+         margin-top: 15px;
+        }
+      }
+    }
+  }
+
+  form {
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    .sidebar {
+      background-color: $floralwhite-color;
+      backdrop-filter: blur(10px);
+    }
+
+    .sidebar-body {
+
+      ul{
+        box-shadow: none;
+        background: none;
+        margin: 0 100px;
+        padding: 200px 0 200px 0;
+
+      }
+    }
+
+  }
+}
