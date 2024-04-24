@@ -1,4 +1,4 @@
- <nav class="navbar navbar-expand-lg sticky-top">
+ <nav class="navbar navbar-expand-lg sticky-top w-100">
   <div class="container-fluid nav-container">
   <!-- Logo  -->
   <a class="navbar-brand m-0" href="#">
@@ -19,10 +19,30 @@
         <li class="nav-item mx-2">
           <a class="nav-link" href="#">{{"TEACHER" | translate}}</a>
         </li>
-        <li class=" nav-item mode cursor-pointer switch-item bg-primary rounded py-1 px-2 d-flex align-items-center justify-content-center" role="button">
+        <!-- <li class=" nav-item mode cursor-pointer switch-item bg-primary rounded py-1 px-2 d-flex align-items-center justify-content-center" role="button">
           <a (click)="switchLanguage() " class="switch-lang w-100 text-center">
             {{ translate.currentLang === 'en' ? 'AR' : 'EN' }}
           </a>
+        </li> -->
+        <li class="nav-item mx-2 switch-item">
+          <div class="dropdown">
+            <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              <img [src]="defaultLanguageFlag" alt="Flag"  style="width: 25px; height: 25px;">
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li class="d-flex justify-content-center">
+                  <a class="dropdown-item" href="javascript:void(0)" (click)="switchLanguage('ar', 'assets/images/flags/Saudi-flag.svg')">
+                    <img src="assets/images/flags/Saudi-flag.svg" alt="Saudi Flag" class="flag-img">
+                  </a>
+               </li>
+              <li class="d-flex justify-content-center">
+                  <a class="dropdown-item" href="javascript:void(0)" (click)="switchLanguage('en', 'assets/images/flags/united_kingdom_flag.png')">
+                   <img src="assets/images/flags/united_kingdom_flag.png" alt="UK Flag" class="flag-img">
+                  </a>
+              </li>
+
+            </ul>
+          </div>
         </li>
         <li class="nav-item" >
           <div class="auth-btns">
@@ -35,58 +55,3 @@
     </div>
   </div>
 </nav>
-<!-- Navbar -->
-
-
-
-
-
-<!-- <nav class="navbar navbar-expand-lg sticky-top">
-  <div class="container-fluid nav-container">
-
-    <a class="navbar-brand" href="#">
-      <img src="../../../assets/images/home/nav-logo.svg" class="align-text-center" alt="Logo-Image" />
-      <span class="nav-title">مجتمع تكنولوجيا المعلومات</span>
-    </a>
-
-
-    <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
-      data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-
-    <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
-      aria-labelledby="offcanvasNavbarLabel">
-
-      <div class="offcanvas-header text-black border-bottom">
-        <h3 class="offcanvas-title text-align-center fs-5 mb-2 py-2" id="offcanvasNavbarLabel ">
-          مجتمع تكنولوجيا المعلومات
-        </h3>
-        <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-
-
-      <div class=" sidebar-body offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
-        <ul class="navbar-nav justify-content-around align-items-center fs-5 flex-grow-1 pe-3">
-          <li class="nav-item mx-2">
-            <a class="nav-link active" aria-current="page" href="#">الفئات</a>
-          </li>
-          <li class="nav-item mx-2">
-            <a class="nav-link" href="#">الدورات</a>
-          </li>
-          <li class="nav-item mx-2">
-            <a class="nav-link" href="#">مُعَلِّمٌ</a>
-          </li>
-        </ul>
-
-
-        <div class="d-flex justify-content-center align-items-center gap-3 flex-column flex-lg-row">
-          <a href="#" class="login-button text-decoration-none text-black fs-5" routerLink="login">تسجيل الدخول</a>
-          <a href="#" class="signup-button text-white text-decoration-none px-4 py-2 rounded-5 fs-5"
-            style="background-color: #9C4DF4;">انشئ حساب </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</nav> -->

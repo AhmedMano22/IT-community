@@ -8,7 +8,7 @@ import { BenfitsComponent } from './benfits/benfits.component';
 import { FeaturesComponent } from './features/features.component';
 import { SubscribeComponent } from './subscribe/subscribe.component';
 import { FooterComponent } from './footer/footer.component';
-
+import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
   declarations: [
@@ -21,7 +21,8 @@ import { FooterComponent } from './footer/footer.component';
   ],
   imports: [
     CommonModule,
-    HomeRoutingModule
+    HomeRoutingModule,
+    TranslateModule.forChild()
   ]
 })
 export class HomeModule { }

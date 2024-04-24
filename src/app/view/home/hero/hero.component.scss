@@ -31,22 +31,37 @@
       }
 
       .right-part {
+        background-image: url("../../../../assets/images/home/circle.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position-x: center;
         h1 {
-          font-weight: 800;
-          font-size: 69px;
-          line-height: 135%;
-          text-align: right;
+          font-weight: 700 !important;
+          line-height: 1.4 !important;
           text-align: start;
-          color: #ff7426;
+          font-size: 38px;
+          .learn{
+            color: #FF7426;
+          }
+          .aquire{
+            color: #B11722;
+          }
+          .advance,.excel{
+            color: #4D2C5E;
+          }
+          @media (max-width:450px) {
+            &{
+              font-size: 27px;
+            }
+          }
         }
 
         p {
           font-weight: 400;
-          font-size: 18px;
-          line-height: 135%;
-          text-align: right;
-          color: #5d5a6f;
-          text-align: justify;
+          font-size: 17px;
+          line-height: 1.5;
+          text-align: start;
+          color: #000000;
         }
       }
     }

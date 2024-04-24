@@ -1,0 +1,101 @@
+@import '../../../../assets/scss/colors';
+.footer{
+  &{
+    background-color: $floralwhite-color;
+    padding: 70px 0 20px 0;
+  }
+  .col-6 > div{
+   // width: 200px;
+    margin-bottom: 15px;
+  }
+  .social-details{
+  text-align: start;
+  .logo-img{
+    width: 35px;
+
+  }
+  .logo-text{
+    color: $black-color;
+    margin-left: 4px;
+    font-weight: 700;
+    font-size: 14px;
+  }
+  .social{
+    padding-inline-start: 0;
+    list-style-type: none;
+    padding-left: 0;
+    .follow{
+      color: $secondblack-color;
+      font-weight: 700;
+      margin-top: 12px;
+    }
+    .card-social{
+      padding-inline-start: 0;
+      gap: 15px;
+      margin-top: 10px;
+      li{
+        width: 25px;
+        height: 25px;
+        background: #06052E;
+        cursor: pointer;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.7s ease;
+        -webkit-transition: all 0.7s ease;
+        -moz-transition: all 0.7s ease;
+        -ms-transition: all 0.7s ease;
+        -o-transition: all 0.7s ease;
+        &:hover
+            {
+              transform: scale(1.5) rotate(360deg);
+              -webkit-transform: scale(1.5) rotate(360deg);
+              -moz-transform: scale(1.5) rotate(360deg);
+              -ms-transform: scale(1.5) rotate(360deg);
+              -o-transform: scale(1.5) rotate(360deg);
+            }
+        a{
+          color: $wight-color;
+          i{
+            font-size: 15px;
+          }
+
+        }
+      }
+    }
+  }
+  }
+  .footer-details{
+    ul{
+      padding-inline-start: 0;
+      list-style-type: none;
+      .link-head{
+        color: $secondblack-color;
+        font-weight: 700;
+      }
+      li{
+        margin-bottom: 5px;
+      }
+      li a{
+        color: $secondblack-color;
+      }
+    }
+  }
+  .copy-write{
+    .Copyright{
+      margin-top: 10px;
+      color: $secondblack-color;
+    }
+  }
+
+}
+.link-head{
+  color: $secondblack-color;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+.icon-link{
+  display: flex;
+  text-decoration: none;
+}
