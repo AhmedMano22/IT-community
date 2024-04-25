@@ -63,7 +63,7 @@ html[dir="rtl"] {
   }
 }
 
- /* login page in auth module */
+ /* login && signUp page in auth module */
  .input-icon-email{
   input{
     text-indent: 25px !important;
@@ -78,8 +78,13 @@ html[dir="rtl"] {
     width: 17px;
   }
  }
-
-
+ .g-login {
+  img{
+    position:absolute;
+    top: 2px;
+    right: 3px;
+  }
+}
 
 
 
