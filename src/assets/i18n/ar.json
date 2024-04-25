@@ -35,5 +35,27 @@
   "SUPPORT":"الدعم",
   "POLICY":"سياسه الخصوصيه",
   "Q_A":"سؤال وجواب",
-  "CONTACTUS":"تواصل معنا"
+  "CONTACTUS":"تواصل معنا",
+  "WELCOME":"أهلاً بك في مجتمع تكنولوجيا المعلومات",
+  "CHOOSE_PASSWORD": "اختر كلمة مرور",
+  "PASSWORD_TOO_SIMPLE": "بسيطة جدًا",
+  "PASSWORD_AVERAGE_COMPLEXITY": "تعقيد متوسط",
+  "PASSWORD_COMPLEX": "كلمة مرور معقدة",
+  "PICK_PASSWORD": "اختر كلمة مرور",
+  "SUGGESTIONS": "اقتراحات",
+  "PASSWORD_RULES": {
+    "LOWERCASE": "على الأقل حرف صغير واحد",
+    "UPPERCASE": "على الأقل حرف كبير واحد",
+    "NUMERIC": "على الأقل رقم واحد",
+    "MIN_CHARACTERS": "الحد الأدنى ٨ أحرف"
+  },
+  "FORGET_PASSWORD":"نسيت كلمة المرور ؟",
+  "REMEMBER_ME":"تذكرني",
+  "OR":"أو",
+  "LOGIN_WITH_GOOGLE":"تسجيل الدخول عبر جوجل",
+  "SIGNUP_WITH_GOOGLE":"التسجيل عبر جوجل",
+  "USERNAME":"اسم المستخدم",
+  "EMAIL_REQUIRED":"البريد الالكتروني مطلوب",
+  "PASSWORD_REQUIRED":"كلمة المرور مطلوبة",
+  "USERNAME_REQUIRED":"اسم المستخدم مطلوب"
 }

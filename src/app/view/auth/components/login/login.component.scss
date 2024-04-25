@@ -1,0 +1,201 @@
+@import "../../../../../assets/scss/colors";
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+.login-section{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 70px;
+}
+.container {
+  .login-box-area {
+   // width: 1060px;
+    background-color: $floralwhite-color;
+    border-radius: 10px;
+    margin: 0 auto;
+  //  padding: 30px;
+
+    .left-box:after {
+      content: "";
+      background: linear-gradient(180deg, #0a033c 0%, #0a033c 51.56%, #0a033c 100%);
+      position: absolute;
+      width: 1px;
+      height: 350px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .left-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      padding: 30px;
+      .input-icon-email ,.input-icon-pass{
+       input{
+        text-indent: 20px;
+       }
+
+      }
+
+      .input-icon-email::after {
+        content: url("../../../../../assets/images/auth/email.png");
+        position: absolute;
+        left: 24px; /* Adjust the icon position */
+        top: 53%;
+        transform: translateY(-50%);
+        z-index: 999;
+      }
+
+      .input-icon-pass::after {
+        content: url("../../../../../assets/images/auth/pass.png");
+
+        position: absolute;
+        left: 25px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 999;
+      }
+
+      .login-btnn {
+        background-color: $light-purple-color;
+        color: $whitesmoke-color;
+        border: none;
+
+        &:hover {
+          background-color: $purple-color;
+        }
+      }
+
+      .g-login {
+        background-color: #ffffff;
+        padding: 10px 0;
+        border: 1px solid #DEDDE4;
+        &:hover {
+          background-color: $purple-color;
+          color: $whitesmoke-color;
+        }
+        img{
+          position:absolute;
+          top: 2px;
+          left: 3px;
+        }
+      }
+
+      .forgot a {
+        text-decoration: none;
+        color: #5d5a6f;
+        font-weight: 400;
+        font-size: 14px;
+      }
+
+      .rememberMe {
+        color: #5d5a6f;
+        font-weight: 400;
+        font-size: 14px;
+      }
+
+
+      .divider {
+        width: 15rem;
+        divider__text {
+          padding: 0 10px;
+        }
+      }
+
+      .divider::before,
+      .divider::after {
+        content: "";
+        border-top: 1px solid rgb(203 213 225);
+        flex-grow: 1;
+        margin: 0 10px;
+
+      }
+      .erorr{
+        color: red;
+      }
+    }
+
+    .right-box {
+      // background-color: #fff;
+      border-radius: 10px;
+      padding: 30px;
+      .intro {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          width: 70px;
+          height: 70px;
+        }
+        h2 {
+          font-family: "Roboto", sans-serif;
+          font-weight: 700;
+          font-size: 17px;
+          color: $black-color;
+          text-align: start;
+        }
+      }
+      .intro-text{
+        h3 {
+          font-family: "Roboto", sans-serif;
+          font-weight: 700;
+          font-size: 23px;
+          color: $mainBlue-color;
+        }
+      }
+      .featured-image{
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        img{
+          width: 225px;
+        }
+      }
+
+    }
+    @media only screen and (max-width: 768px) {
+      & {
+        margin: 0 10px;
+        .right-box {
+          padding: 0;
+          .featured-image {
+            display: none;
+          }
+
+          h3 {
+            display: none;
+          }
+        }
+        .left-box {
+          padding: 20px !important;
+        }
+        .left-box:after {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+
+::ng-deep .p-password{
+  width: 100%;
+  input{
+    width: 100%;
+    text-indent: 26px;
+    margin-bottom: .25rem
+  }
+  &::after {
+    content: url("../../../../../assets/images/auth/pass.png");
+    position: absolute;
+    left: 10px;
+    top: 57%;
+    transform: translateY(-50%);
+    z-index: 999;
+    width: 17px;
+  }
+}
+
+

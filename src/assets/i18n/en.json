@@ -36,5 +36,27 @@
   "SUPPORT":"Support",
   "POLICY":"Privacy Policy",
   "Q_A":"Question and Answer",
-  "CONTACTUS":"Connect with us"
+  "CONTACTUS":"Connect with us",
+  "WELCOME":"Welcome to the IT community",
+  "CHOOSE_PASSWORD": "Choose a password",
+  "PASSWORD_TOO_SIMPLE": "Too simple",
+  "PASSWORD_AVERAGE_COMPLEXITY": "Average complexity",
+  "PASSWORD_COMPLEX": "Complex password",
+  "PICK_PASSWORD": "Pick a password",
+  "SUGGESTIONS": "Suggestions",
+  "PASSWORD_RULES": {
+    "LOWERCASE": "At least one lowercase",
+    "UPPERCASE": "At least one uppercase",
+    "NUMERIC": "At least one numeric",
+    "MIN_CHARACTERS": "Minimum 8 characters"
+  },
+  "FORGET_PASSWORD":"Forgot your password ?",
+  "REMEMBER_ME":"Remember me",
+  "OR":"OR",
+  "LOGIN_WITH_GOOGLE":"Log in with Google",
+  "SIGNUP_WITH_GOOGLE":"Register with Google",
+  "USERNAME":"User Name",
+  "EMAIL_REQUIRED":" Email is required",
+  "PASSWORD_REQUIRED":"password is required",
+  "USERNAME_REQUIRED":"Username required"
 }

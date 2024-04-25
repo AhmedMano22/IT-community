@@ -9,7 +9,6 @@
     .navbar-toggler:focus {
       box-shadow: none;
     }
-
     img {
       width: 60px;
     }
@@ -68,11 +67,26 @@
         }
 
       }
+      .auth-btns{
+        .login ,.logout{
+          color: $black-color;
+          &:hover {
+            background-color: $light-purple-color;
+            color: $wightcolor;
+            transition: all .3s ease-in-out;
+            -webkit-transition: all .3s ease-in-out;
+            -moz-transition: all .3s ease-in-out;
+            -ms-transition: all .3s ease-in-out;
+            -o-transition: all .3s ease-in-out;
+}
+        }
+        .active {
+          background-color: $light-purple-color;
+          color: $wightcolor;
 
-      .logout {
-        background-color: #9C4DF4;
-        color: $wightcolor;
+}
       }
+
     }
 
     @media (max-width:991px) {
@@ -83,6 +97,8 @@
         }
       }
     }
+
+
   }
 
   form {

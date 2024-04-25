@@ -1,4 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
+/* start primeNg */
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+@import "primeicons/primeicons.css";
+/*  end primeNg */
 @import "assets/scss/style.scss";
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
@@ -18,3 +22,22 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+html[dir="rtl"]  .p-input-icon-right > .p-icon-wrapper, .p-input-icon-right > i:last-of-type {
+  right: 90% !important;
+  color: #6b7280 !important;
+}
+html[dir="rtl"] .p-password{
+  width: 100%;
+  input{
+    width: 100%;
+    text-indent: 0 !important;
+    margin-bottom: .25rem
+  }
+  &::after {
+    content: url("assets/images/auth/pass.png");
+    position: absolute;
+    right: 10px;
+    width: 17px;
+  }
+}
+

@@ -9,15 +9,17 @@ import { TranslateService } from '@ngx-translate/core';
 export class NavbarComponent {
 
   defaultLanguageFlag: string='';
+  isLoginActive: boolean = true;
+  isSignupActive: boolean = false;
   constructor( public translate: TranslateService){
     this.updateFlagAndLanguage(this.translate.currentLang);
-
+    const storedLoginActive = localStorage.getItem('isLoginActive');
+    this.isLoginActive = storedLoginActive === 'true';
+    const storedSignupActive = localStorage.getItem('isSignupActive');
+    this.isSignupActive = storedSignupActive === 'true';
   }
 
-  // switchLanguage() {
-  //   const currentLang = this.translate.currentLang;
-  //   this.translate.use(currentLang === 'ar' ? 'en' : 'ar');
-  // }
+
   switchLanguage(lang: string, flagUrl: string): void {
     this.translate.use(lang);
     this.defaultLanguageFlag = flagUrl;
@@ -39,7 +41,19 @@ export class NavbarComponent {
     }
     this.translate.use(lang);
   }
-
+  toggleActiveButton(button: string) {
+    if (button === 'login') {
+      this.isLoginActive = true;
+      this.isSignupActive = false;
+      localStorage.setItem('isLoginActive', JSON.stringify(true));
+      localStorage.setItem('isSignupActive', JSON.stringify(false));
+    } else if (button === 'signup') {
+      this.isLoginActive = false;
+      this.isSignupActive = true;
+      localStorage.setItem('isLoginActive', JSON.stringify(false));
+      localStorage.setItem('isSignupActive', JSON.stringify(true));
+    }
+  }
 
 
 

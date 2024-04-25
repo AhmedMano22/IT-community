@@ -1,0 +1,105 @@
+<!-- Main contiainer -->
+<section class="login-section">
+  <div class="container d-flex justify-content-center align-items-center ">
+
+    <!-- Login Container  -->
+    <div class="row border round-5  shadow login-box-area">
+      <!-- Right Box  -->
+      <div class="col-md-6  right-box">
+        <div class="intro d-flex w-100 justify-content-start ">
+          <img src="assets/images/auth/auth-logo.png" loading="lazy">
+          <h2 class="mb-0">{{"IT" |translate}}</h2>
+        </div>
+        <div class="intro-text w-100">
+          <h3 class="text-wrap">{{"WELCOME" |translate}}</h3>
+        </div>
+        <div class="featured-image mb-6">
+          <img src="assets/images/auth/log-card.png" class="img-fluid" loading="lazy">
+        </div>
+      </div>
+      <!-- Left Box -->
+       <div class="col-md-6 left-box">
+        <form [formGroup]="SignUpForm" (submit)="onSubmit()">
+            <div class="row align-items-center">
+
+              <div class=" flex justify-content-center  align-items-center mb-2 mt-3 ">
+                    <p-iconField [iconPosition]="iconPosition">
+                      <p-inputIcon styleClass="pi pi-user" />
+                      <input type="text" formControlName="username" pInputText [placeholder]="'USERNAME' | translate" class="w-100 mb-1" />
+                   </p-iconField>
+                   <span class="erorr " *ngIf="SignUpForm.get('username')?.touched &&
+                      SignUpForm.get('username')?.hasError('required')">
+                    {{"USERNAME_REQUIRED" |translate}}
+                  </span>
+              </div>
+              <div class=" flex justify-content-center  align-items-center mb-2 ">
+                  <p-iconField [iconPosition]="iconPosition">
+                    <p-inputIcon styleClass="pi pi-envelope" />
+                    <input  formControlName="email" type="email" pInputText placeholder="bill.sanders@example.com" class="w-100  mb-1" />
+                </p-iconField>
+                <span class="erorr " *ngIf="SignUpForm.get('email')?.touched &&
+                    SignUpForm.get('email')?.hasError('required')">
+                  {{"EMAIL_REQUIRED" |translate}}
+                </span>
+               </div>
+
+               <div class="flex justify-content-center  mb-1">
+                <p-password formControlName="password"  [toggleMask]="true" class="input-primeng-pass mb-1" [promptLabel]="promptLabel"
+                  [weakLabel]="weakLabel" [mediumLabel]="mediumLabel" [strongLabel]="strongLabel" placeholder="**********">
+                  <ng-template pTemplate="footer">
+                    <p-divider></p-divider>
+                    <p class="mt-1">{{ 'SUGGESTIONS' | translate }}</p>
+                    <ul class="pl-1 ml-1 mt-0" style="font-size: 13px;">
+                      <li>{{ 'PASSWORD_RULES.LOWERCASE' | translate }}</li>
+                      <li>{{ 'PASSWORD_RULES.UPPERCASE' | translate }}</li>
+                      <li>{{ 'PASSWORD_RULES.NUMERIC' | translate }}</li>
+                      <li>{{ 'PASSWORD_RULES.MIN_CHARACTERS' | translate }}</li>
+                    </ul>
+                  </ng-template>
+                </p-password>
+                  <span class="erorr " *ngIf="SignUpForm.get('password')?.touched &&
+                      SignUpForm.get('password')?.hasError('required')">
+                    {{"PASSWORD_REQUIRED" |translate}}
+                  </span>
+              </div>
+
+              <div class="input-group mb-2">
+                <button class="btn btn-lg btn-primary w-100 fs-6 mt-3 login-btnn" type="submit"
+                [disabled]="!SignUpForm.valid"
+                >{{"SGININ" |translate}}</button>
+              </div>
+              <div class="input-group mb-1 d-flex justify-content-between p-2">
+                <div class="forgot">
+                  <small><a href="#">{{"FORGET_PASSWORD" |translate}}</a></small>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" formControlName="rememberMe"  id="rememberMe">
+                  <label class="form-check-label rememberMe" for="rememberMe">
+                    {{"REMEMBER_ME" |translate}}
+                  </label>
+                </div>
+              </div>
+
+              <div class="col divider d-flex justify-content-center align-items-center">
+                <div class="divider__text">{{"OR" |translate}}</div>
+              </div>
+              <div class="input-group mb-3">
+                <button class="btn btn-lg btn-light w-100 fs-6 mt-3 g-login" type="button">
+                  <span> {{"SIGNUP_WITH_GOOGLE" |translate}}</span>
+                  <img src="assets/images/auth/google.png" class="" alt="">
+                </button>
+              </div>
+            </div>
+         </form>
+      </div>
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</section>
