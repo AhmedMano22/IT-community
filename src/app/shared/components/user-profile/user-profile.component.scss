@@ -1,0 +1,110 @@
+@import '../../../../assets/scss/colors';
+.dropmenu{
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.user-profile{
+  justify-content: end;
+
+  .user-name{
+    font-size: 17px;
+    margin-left: 15px;
+    color: $black-color;
+  }
+  .dashbord, .Sign-out{
+    color: #1248A4;
+    font-size: 17px;
+    border: 1px solid #1248A4;
+    border-radius: 30px;
+    width: 98%;
+    text-align: center;
+    font-weight: 500;
+  }
+  .dashbord{
+    color: #1248A4;
+  }
+  .Sign-out{
+    color: $red-color;
+    cursor: pointer;
+  }
+  @media (min-width:991px) {
+    &{
+      justify-content: end;
+    }
+  }
+}
+
+@media (min-width:991px) {
+  .dropdown-menu{
+    right: 0 !important;
+    left: unset !important;
+  }
+}
+
+.notifications{
+  .bx-bell{
+    font-size: 30px;
+    color: black;
+  }
+  .notification-menu{
+    position: absolute !important;
+    width: 348px;
+    transform: translate3d(60px, 32px, 0px) !important;
+    -webkit-transform: translate3d(60px, 32px, 0px) !important;
+    -moz-transform: translate3d(60px, 32px, 0px) !important;
+    -ms-transform: translate3d(60px, 32px, 0px) !important;
+    -o-transform: translate3d(60px, 32px, 0px) !important;
+      right: 0 !important;
+
+    margin: 0px !important;
+    @media (max-width:420px) {
+      &{
+        inset: unset !important;
+        right: 0 !important;
+      }
+    }
+}
+  .notify-container{
+    gap: 10px;
+  .user-image{
+    img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50px;
+      -webkit-border-radius: 50px;
+      -moz-border-radius: 50px;
+      -ms-border-radius: 50px;
+      -o-border-radius: 50px;
+    }
+  }
+  .notify-details{
+    h4{
+      font-size: 14px;
+      margin-bottom: 0.1rem;
+    }
+    .noti-content{
+      font-size: 12px;
+    }
+  }
+  @media (max-width:500px) {
+    .user-image{
+      img {
+        width: 45px;
+        height: 45px;
+      }
+    }
+    .notify-details{
+      h4{
+        font-size: 17px;
+      }
+      .noti-content{
+        font-size: 15px;
+      }
+    }
+  }
+  }
+}

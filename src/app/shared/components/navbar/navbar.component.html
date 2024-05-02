@@ -1,8 +1,9 @@
  <nav class="navbar navbar-expand-lg sticky-top w-100">
   <div class="container-fluid nav-container">
   <!-- Logo  -->
-  <a class="navbar-brand m-0" href="#">
-    <img src="assets/images/home/nav-logo.svg" class="align-text-center" alt="Logo-Image" />
+  <a class="navbar-brand m-0" routerLink="">
+    <!-- <img src="assets/images/home/nav-logo.svg" class="align-text-center" alt="Logo-Image" /> -->
+    <img src="assets/images/auth/auth-logo.png" loading="lazy" class="align-text-center" alt="Logo-Image">
     <span class="nav-title">{{"IT" |translate}}</span>
   </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -11,13 +12,13 @@
     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
       <ul class="navbar-nav  mb-2 mb-lg-0">
         <li class="nav-item mx-2">
-          <a class="nav-link active" aria-current="page" href="#">{{"CATEGORIES" | translate}}</a>
+          <a class="nav-link active" routerLinkActive="active" aria-current="page" href="#">{{"CATEGORIES" | translate}}</a>
         </li>
         <li class="nav-item mx-2">
-          <a class="nav-link" href="#">{{"COURCES" | translate}}</a>
+          <a class="nav-link" routerLinkActive="active" href="#">{{"COURCES" | translate}}</a>
         </li>
         <li class="nav-item mx-2">
-          <a class="nav-link" href="#">{{"TEACHER" | translate}}</a>
+          <a class="nav-link" routerLinkActive="active" [routerLink]="['', 'Teacher']">{{"TEACHER" | translate}}</a>
         </li>
 
         <li class="nav-item mx-2 switch-item">
@@ -51,6 +52,9 @@
               {{"SGINUP" | translate}}
             </button>
           </div>
+        </li>
+        <li  class="nav-item" *ngIf="islogin">
+          <app-user-profile></app-user-profile>
         </li>
       </ul>
 

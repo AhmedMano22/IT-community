@@ -14,7 +14,16 @@
           <h3 class="text-wrap">{{"WELCOME" |translate}}</h3>
         </div>
         <div class="featured-image mb-6">
-          <img src="assets/images/auth/log-card.png" class="img-fluid" loading="lazy">
+          <!-- <img src="assets/images/auth/log-card.png" class="img-fluid" loading="lazy"> -->
+          <owl-carousel-o [options]="customOptions" class="mb-6" style="width: 225px !important;height: 255px;">
+
+            <ng-container *ngFor="let slide of apiData">
+              <ng-template class="slide" carouselSlide [id]="slide.id">
+                <img [src]="slide.url" [alt]="slide.id" [title]="slide.id" width="100" >
+              </ng-template>
+            </ng-container>
+
+          </owl-carousel-o>
         </div>
       </div>
       <!-- Left Box -->

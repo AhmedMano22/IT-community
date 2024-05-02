@@ -1,0 +1,96 @@
+@import "../../../../../assets/scss/colors";
+
+.box{
+  display: flex;
+  justify-content: space-around;
+    align-items: center;
+    background: #fff;
+    border-radius: 21px;
+    padding: 25px 0;
+    .title{
+      color: $black-color;
+      font-size: 20px;
+      font-weight: 600;
+    }
+    .box-img{
+      img{
+        width: 185px;
+      }
+
+    }
+    @media (max-width:600px) {
+      &{
+        flex-direction: column;
+        .title{
+          margin-top: 15px;
+          margin-bottom: 25px;
+        }
+      }
+    }
+    &.create-course {
+
+      // box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 4rem 0;
+      box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1);
+      .box-button{
+        .create-btn{
+          background-color: $purple-color;
+          color: $wight-color;
+          border: 0;
+          padding: 9px 25px;
+          border-radius: 10px;
+        }
+      }
+    }
+    &.attractive{
+      .title{
+        width: 65%;
+        .details{
+          font-size: 15px;
+        }
+      }
+      @media (max-width:700px) {
+       &{
+        flex-direction: column;
+        .title{
+          width: 90%;
+          margin-bottom: 20px;
+          .details{
+           text-align: center;
+          }
+        }
+       }
+      }
+
+    }
+
+
+}
+  .join{
+    margin-top: 5rem;
+    h1{
+      text-align: center;
+      font-weight: 500;
+      margin-bottom: 20px !important;
+    }
+  .vedio-container{
+    display: flex;
+    justify-content: center;
+    .vedio-elemnt{
+      width: 85%;
+      @media (max-width:850px) {
+        &{
+          width: 100%;
+        }
+      }
+    }
+  }
+  }
+  .success-section{
+    margin-top: 5rem;
+    .to-be-success{
+      text-align: center;
+      font-size: 21px;
+      color:$fire-brick-color ;
+    }
+  }

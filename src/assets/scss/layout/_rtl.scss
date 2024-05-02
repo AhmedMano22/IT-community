@@ -86,7 +86,39 @@ html[dir="rtl"] {
   }
 }
 
+ /* user profile page in teacher module */
+ @media (min-width:991px) {
+  .dropdown-menu{
+    left: 0 !important;
+   right: unset !important;
+  }
+}
+.notifications{
+  .bx-bell{
+    font-size: 30px;
+    color: black;
+  }
+  .notification-menu{
+    position: absolute !important;
+    width: 348px;
+    transform: translate3d(-58px, 32px, 0px) !important;
+    -webkit-transform: translate3d(-58px, 32px, 0px) !important;
+    -moz-transform: translate3d(-58px, 32px, 0px) !important;
+    -ms-transform: translate3d(-58px, 32px, 0px) !important;
+    -o-transform: translate3d(-58px, 32px, 0px) !important;
+    inset: 0px auto auto 0px !important;
+    margin: 0px !important;
+    left: 0 !important;
 
+    margin: 0px !important;
+    // @media (max-width:420px) {
+    //   &{
+    //     inset: unset !important;
+    //     right: 0 !important;
+    //   }
+    // }
+}
 
+}
 }
 

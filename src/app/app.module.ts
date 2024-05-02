@@ -17,9 +17,7 @@ import {
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material/material.module';
 import { FormsModule } from '@angular/forms';
-export function HttpLoaderFactory(http: HttpClient) {
-  return new TranslateHttpLoader(http, '../../assets/i18n/', '.json');
-}
+
 @NgModule({
   declarations: [
     AppComponent
@@ -30,13 +28,6 @@ export function HttpLoaderFactory(http: HttpClient) {
     SharedModule,
     HttpClientModule,
     FormsModule,
-    TranslateModule.forRoot({
-      loader: {
-        provide: TranslateLoader,
-        useFactory: HttpLoaderFactory,
-        deps: [HttpClient],
-      },
-    }),
     BrowserAnimationsModule,
     MaterialModule
   ],
@@ -44,19 +35,5 @@ export function HttpLoaderFactory(http: HttpClient) {
   bootstrap: [AppComponent]
 })
 export class AppModule {
-  constructor(
-    private translateService: TranslateService,
 
-  ) {
-    const appLang = localStorage.getItem('app-lang') ?? 'ar';
-    this.translateService.setDefaultLang('ar');
-    this.translateService.use(appLang);
-
-    this.translateService.onLangChange.subscribe((event) => {
-      document.documentElement.dir = event.lang === 'ar' ? 'rtl' : 'ltr';
-      document.documentElement.lang = event.lang;
-      localStorage.setItem('app-lang', event.lang);
-
-    });
-  }
  }

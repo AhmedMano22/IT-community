@@ -1,0 +1,82 @@
+@import "../../../../assets/scss/colors";
+
+.navbar {
+  padding: 0;
+  background-color: $floralwhite-color;
+  position: sticky;
+  top: 0;
+
+  .nav-container {
+    .navbar-toggler:focus {
+      box-shadow: none;
+    }
+
+    img {
+      width: 60px;
+    }
+
+    ul {
+      .switch-item {
+        .dropdown-toggle {
+          border: 0 !important;
+          background: transparent !important;
+          width: 40px;
+          display: flex;
+          justify-content: center;
+
+          &::after {
+            display: none;
+          }
+        }
+
+        .dropdown-menu {
+          width: 40px;
+          z-index: 99999999999999999999;
+          min-width: fit-content !important;
+          border: 1px solid #cfc2c2;
+
+          .dropdown-item {
+            width: fit-content !important;
+            position: relative;
+            padding: 2px !important;
+
+            img {
+              height: 30px;
+              width: 30px;
+            }
+          }
+        }
+        .dropdown-item.ksa {
+          border-color: green;
+        }
+        .dropdown-item.kingdom {
+          border-color: red;
+        }
+        height: 37px;
+        .switch-lang {
+          color: $wightcolor;
+          text-decoration: none;
+        }
+
+      }
+    .nav-link{
+      color: $dark-color;
+      font-weight: 500;
+    }
+
+
+    }
+
+    @media (max-width:991px) {
+      & {
+        .nav-item:last-child {
+          margin-top: 15px;
+        }
+      }
+    }
+
+
+  }
+
+
+}

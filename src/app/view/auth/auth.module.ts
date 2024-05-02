@@ -14,6 +14,8 @@ import { InputTextModule } from 'primeng/inputtext';
 import { CheckboxModule } from 'primeng/checkbox';
 import { IconFieldModule } from 'primeng/iconfield';
 import { InputIconModule } from 'primeng/inputicon';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { SharedModule } from 'src/app/shared/shared.module';
 @NgModule({
   declarations: [
     LoginComponent,
@@ -27,10 +29,13 @@ import { InputIconModule } from 'primeng/inputicon';
     PasswordModule,
     DividerModule,
     InputTextModule,
-    TranslateModule.forChild(),
     FormsModule,
     ReactiveFormsModule,
-    CheckboxModule,IconFieldModule,InputIconModule
+    CarouselModule,
+    CheckboxModule,
+    IconFieldModule,
+    InputIconModule,
+    SharedModule
   ]
 })
 export class AuthModule { }

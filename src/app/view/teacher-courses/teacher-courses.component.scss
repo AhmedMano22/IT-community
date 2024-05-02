@@ -1,0 +1,81 @@
+@import "../../../assets/scss/colors";
+.container-fluid{
+  .navigation{
+    display: none;
+    background-color:$whitesmoke-color;
+    .nav-logo{
+      img{
+        width: 80px;
+      }
+    }
+    .nav-back{
+      a{
+        font-weight: 500;
+        color: $black-color;
+        text-decoration: none;
+      }
+    }
+  }
+.sidebar{
+  background-color:$whitesmoke-color;
+  .logo{
+    display: flex;
+    justify-content: center;
+  }
+  .radios{
+    margin-top: 5rem;
+    flex-direction: column;
+    gap: 10px;
+    label{
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+    }
+  }
+  .nav{
+    padding-inline-start: 0;
+  }
+
+}
+.content{
+  background-color: $floralwhite-color;
+  .back{
+    margin-bottom: 4rem;
+    padding: 15px;
+    text-align: end;
+    a{
+      font-weight: 500;
+      color: $black-color;
+      text-decoration: none;
+    }
+  }
+}
+
+@media (max-width:768px) {
+  &{
+    .navigation{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .sidebar{
+      .radios{
+        margin-top: 0;
+        flex-direction: row;
+        padding: 15px;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+      .logo{
+        display: none;
+      }
+    }
+    .content{
+      .back{
+        display: none;
+      }
+    }
+  }
+}
+}

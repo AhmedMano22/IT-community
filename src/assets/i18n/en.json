@@ -58,5 +58,26 @@
   "USERNAME":"User Name",
   "EMAIL_REQUIRED":" Email is required",
   "PASSWORD_REQUIRED":"password is required",
-  "USERNAME_REQUIRED":"Username required"
+  "USERNAME_REQUIRED":"Username required",
+  "STUDENT":"Student",
+  "EVERY_THING_AS_TEACHER":"Here is everything for you as a teacher",
+  "DO_YOU_WANT_CREATE_NEW_COURSE":"Do you want to create a new course?",
+  "CREATE_NEW_COURSE":"Create a new course",
+  "JOIN":"How to apply to join as a teacher",
+  "IMPORTANT":"It is essential that your course captures students' interest and provides them with a useful and structured learning experience. The most effective teachers take time to think about and plan course content before beginning the registration process.",
+  "TO_BE_SUCCESS":"But before creating a new course, you must follow these instructions that will help you be successful",
+  "ATTRACTIVE_COURSE":"Create an Attractive course",
+  "BACK":"Back",
+  "COURSE_INTERFACE":"Course Interface",
+  "TARGETS":"the targets",
+  "CONTENT_CREATION":"Content creation",
+  "PRICING":"pricing",
+  "WELECME":"Welcome/congratulate subscribers",
+  "PUBLISING":"publishing"
+
+
+
+
+
+
 }

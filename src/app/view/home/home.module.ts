@@ -9,6 +9,7 @@ import { FeaturesComponent } from './features/features.component';
 import { SubscribeComponent } from './subscribe/subscribe.component';
 import { FooterComponent } from './footer/footer.component';
 import { TranslateModule } from '@ngx-translate/core';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -20,9 +21,10 @@ import { TranslateModule } from '@ngx-translate/core';
     FooterComponent
   ],
   imports: [
+    SharedModule,
     CommonModule,
     HomeRoutingModule,
-    TranslateModule.forChild()
+
   ]
 })
 export class HomeModule { }

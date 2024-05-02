@@ -1,0 +1,8 @@
+@import "../../../../../assets/scss/colors";
+
+.sidebar{
+  background-color:$dark-almond-color;
+  .nav{
+    padding-inline-start: 0;
+  }
+}

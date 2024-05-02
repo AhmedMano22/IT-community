@@ -1,7 +1,7 @@
 import { ChangeDetectorRef, Component } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { TranslateService } from '@ngx-translate/core';
-
+import { OwlOptions } from 'ngx-owl-carousel-o';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -54,4 +54,46 @@ export class LoginComponent {
   private setDirectionality(lang: string): void {
     this.iconPosition = lang =='ar' ? 'right' : 'left';
   }
+  apiData = [
+    {
+      url: "assets/images/auth/login_1.png",
+      name: "Carl Oliver",
+      id:"3"
+    }, {
+      url: "assets/images/auth/login_2.png",
+      name: "Carl Oliver",
+      id:"3"
+    },
+    {
+      url: "assets/images/auth/login_3.png",
+      name: "Carl Oliver",
+      id:"3"
+    },
+    {
+      url: "assets/images/auth/log-card.png",
+      name: "Christa Smith",
+      id:"4"
+    }
+
+  ];
+  customOptions: OwlOptions = {
+    loop: true,
+    autoplay: true,
+    center: true,
+    dots: true,
+    autoHeight: true,
+    autoWidth: true,
+    rtl:true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 1,
+      },
+      1000: {
+        items: 1,
+      },
+    },
+  };
 }

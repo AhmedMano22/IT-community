@@ -7,7 +7,7 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent {
-
+  islogin:boolean=false;
   defaultLanguageFlag: string='';
   isLoginActive: boolean = true;
   isSignupActive: boolean = false;
