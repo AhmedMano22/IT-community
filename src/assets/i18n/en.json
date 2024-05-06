@@ -103,5 +103,13 @@
 
   "APPROPRITE_COURSE_LEARNER_DESC": "Write a clear description of your course target learners, who will find your course content very valuable. This will help attract the right students for your course.",
 
-  "ADD_MORE_TARGETS": "+ Add more"
+  "ADD_MORE_TARGETS": "+ Add more",
+
+  "WRITE_MESSAGE": "Write your students welcoming messages",
+
+  "WRITE_MESSAGE_CAPTION": "Writiting messages to your students will be automatically sent out when they join or complete the course to encourage students to engage with the course content. If you don't want to send a welcome or congratulatory message, leave the text box blank.",
+
+  "WELCOME_MESSAGE": "1. Write a welcome message",
+
+  "CONGRATS_MESSAGE": "2. Write a congrats message"
 }
