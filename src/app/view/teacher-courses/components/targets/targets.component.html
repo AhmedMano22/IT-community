@@ -1,1 +1,119 @@
-<p>targets works!</p>
+<div class="row justify-content-center target-container">
+  <div class="col-11 p-0">
+    <!-- Introduction -->
+    <div class="course-desc-container">
+      <p>
+        {{ "TARGET_DESCRIPTION" | translate }}
+      </p>
+    </div>
+
+    <!-- Course Objectives -->
+    <div class="course-objectives">
+      <h3>{{ "WHAT_YOU_WILL_LEARN" | translate }}</h3>
+      <p>{{ "WHAT_YOU_WILL_LEARN_CONTENT" | translate }}</p>
+
+      <!-- The 3 fixed required targets -->
+      <div *ngFor="let input of inputData" class="col-lg-9 col-sm-12">
+        <input
+          type="text"
+          class="mt-3 p-3 w-100"
+          pInputText
+          id="input{{ input.id }}"
+          name="input{{ input.id }}"
+          [(ngModel)]="input.value"
+        />
+      </div>
+
+      <!-- Dynamic targets based on user input -->
+      <form [formGroup]="form">
+        <div formArrayName="targets">
+          <div
+            *ngFor="let target of targets.controls; let i = index"
+            [formGroupName]="i"
+            class="col-lg-9 col-sm-12"
+          >
+            <input
+              class="mt-3 p-3 w-100"
+              type="text"
+              pInputText
+              formControlName="targetDesc"
+            />
+          </div>
+          <div class="d-flex justify-content-start">
+            <button class="btn" (click)="addTarget()">
+              {{ "ADD_MORE_TARGETS" | translate }}
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- Pre-requesties to join your course -->
+    <div class="course-pre-requisites">
+      <h3>{{ "PRE_REQUISITES_TO_JOIN" | translate }}</h3>
+      <p>{{ "PRE_REQUISITES_TO_JOIN_CONTENT" | translate }}</p>
+
+      <!-- The 1 fixed required pre-requisite -->
+      <div class="col-lg-9 col-sm-12">
+        <input type="text" class="mt-3 p-3 w-100" pInputText />
+      </div>
+
+      <!-- Dynamic pre-requisites based on user input -->
+      <form [formGroup]="form">
+        <div formArrayName="Pre-requestie">
+          <div
+            *ngFor="let cond of conditions.controls; let i = index"
+            [formGroupName]="i"
+            class="col-lg-9 col-sm-12"
+          >
+            <input
+              class="mt-3 p-3 w-100"
+              type="text"
+              pInputText
+              formControlName="preRequesties"
+            />
+          </div>
+          <div class="d-flex justify-content-start">
+            <button class="btn" (click)="addPreRequesties()">
+              {{ "ADD_MORE_TARGETS" | translate }}
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- Targeted learners to join your course -->
+    <div class="course-learner-description">
+      <h3>{{ "APPROPRITE_COURSE_LEARNER" | translate }}</h3>
+      <p>{{ "APPROPRITE_COURSE_LEARNER_DESC" | translate }}</p>
+
+      <!-- The 1 fixed required learner description -->
+      <div class="col-lg-9 col-sm-12">
+        <input type="text" class="mt-3 p-3 w-100" pInputText />
+      </div>
+
+      <!-- Dynamic learner descriptions based on user input -->
+      <form [formGroup]="form">
+        <div formArrayName="qualified-learner">
+          <div
+            *ngFor="let learner of learners.controls; let i = index"
+            [formGroupName]="i"
+            class="col-lg-9 col-sm-12"
+          >
+            <input
+              class="mt-3 p-3 w-100"
+              type="text"
+              pInputText
+              formControlName="qualifiedLearner"
+            />
+          </div>
+          <div class="d-flex justify-content-start">
+            <button class="btn" (click)="addQualifiedLearnerDesc()">
+              {{ "ADD_MORE_TARGETS" | translate }}
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

@@ -8,6 +8,8 @@
 @import 'ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
 /* end owl-carsoral */
 @import "assets/scss/style.scss";
+@import "./assets/scss/_colors.scss";
+
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 ::-webkit-scrollbar {
@@ -62,3 +64,6 @@ html[dir="rtl"] .p-password{
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
   background: $tomato-color !important;
 }
+
+
+

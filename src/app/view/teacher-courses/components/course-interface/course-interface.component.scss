@@ -1,0 +1,78 @@
+@import "../../../../../assets/scss/colors";
+
+.course-interface {
+  .course-img-cover, .course-vid-intro {
+    display: flex;
+    flex-direction: column;
+
+    .upload-custom-button {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      .custom-text-container {
+        background-color: #ffffff;
+        padding: 10px 20px;
+        font-size: 1.25rem;
+      }
+      .custom-button-container {
+
+        .cutom-upload-btn {
+          background-color: $purple-color;
+          color: #ffffff;
+          font-size: 1.25rem;
+          padding: 10px 20px;
+          border: none;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+label {
+  color: $fire-brick-color;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+input,
+select,
+textarea {
+  width: 50%;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border: none;
+  box-shadow: 0px 0px 5px $purple-color;
+}
+@media screen and (max-width: 991px) {
+
+  .course-interface {
+    .course-img-cover, .course-vid-intro {
+      .upload-custom-button {
+        .custom-text-container {
+          font-size: 1rem;
+        }
+        .custom-button-container {
+          .cutom-upload-btn {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+
+input,
+select,
+textarea {
+  width: 75%;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+}

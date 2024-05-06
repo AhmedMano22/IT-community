@@ -12,6 +12,13 @@ import { PricingComponent } from './components/pricing/pricing.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
 import { PublishComponent } from './components/publish/publish.component';
 
+import { FileUploadModule } from 'primeng/fileupload';
+import { MaterialModule } from 'src/app/material/material/material.module';
+
+import {ReactiveFormsModule } from '@angular/forms'; // import FormsModule
+
+
+
 
 @NgModule({
   declarations: [
@@ -27,7 +34,10 @@ import { PublishComponent } from './components/publish/publish.component';
     CommonModule,
     FormsModule,
     TeacherCoursesRoutingModule,
-    SharedModule
+    SharedModule,
+    FileUploadModule,
+    MaterialModule,
+    ReactiveFormsModule
   ]
 })
 export class TeacherCoursesModule { }

@@ -1,5 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
-html, body {
+
+html,
+body {
   height: 100%;
 }
 
@@ -17,10 +19,12 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #0C0531;
+  background: #0c0531;
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
-}/*# sourceMappingURL=styles.css.map */
+} /*# sourceMappingURL=styles.css.map */
+
+

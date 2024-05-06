@@ -1,0 +1,53 @@
+@import "../../../../../assets/scss/colors";
+
+.target-container {
+  h3 {
+    color: $fire-brick-color;
+    font-size: 1.5rem;
+    margin-top: 2.25rem;
+    line-height: 1.25;
+  }
+
+  p {
+    width: 75%;
+    color: #000000;
+    font-size: 1.25rem;
+    line-height: 1.25;
+  }
+
+  button {
+    color: $purple-color;
+    font-size: 1.25rem;
+    line-height: 1.25;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  input {
+    border: $floralwhite-color 1px solid;
+    border-radius: 10px;
+  }
+
+  input:focus {
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 5px $purple-color;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .target-container {
+    h3 {
+      font-size: 1.25rem;
+    }
+
+    p {
+      width: 100%;
+    }
+
+    button {
+      font-size: 1rem;
+    }
+  }
+}

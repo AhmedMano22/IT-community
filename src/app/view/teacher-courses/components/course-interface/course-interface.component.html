@@ -1,1 +1,120 @@
-<p>course-interface works! by deeby</p>
+<div class="row justify-content-start course-interface">
+  <div class="col-11 d-flex flex-column gap-5 p-3">
+
+    <!-- Course title area -->
+<div class="course-title">
+      <label class="form-label mb-3">{{
+        "PUT_COURSE_TITLE" | translate
+      }}</label>
+      <input type="text" class="form-control" />
+    </div>
+
+    <!-- Course category area -->
+    <div class="course-category">
+      <label class="form-label mb-3">{{
+        "CHOOSE_COURSE_CATAGORY" | translate
+      }}</label>
+      <select
+        class="form-select"
+        [(ngModel)]="selectedCategoryOption"
+        (change)="onCategoryChange()"
+      >
+        <option *ngFor="let option of optionsCatagory" [value]="option.value">
+          {{ option.value | translate }}
+        </option>
+      </select>
+    </div>
+
+    <!-- Course image cover area -->
+    <div class="course-img-cover">
+      <label class="form-label mb-3">{{
+        "COURSE_IMAGE_COVER" | translate
+      }}</label>
+      <div class="upload-custom-button">
+        <input
+          type="file"
+          class="form-control d-none"
+          accept="image/*"
+          #fileImageInput
+          (change)="onFileImageChange($event)"
+        />
+        <div class="custom-text-container">
+          <span class="custom-text-upload">{{
+            "COURSE_IMAGE_COVER_NOT_SELECTED" | translate
+          }}</span>
+        </div>
+        <div class="custom-button-container">
+          <button
+            type="button"
+            class="cutom-upload-btn"
+            (click)="fileImageInput.click()"
+          >
+            {{ "COURSE_UPLODED_COVER_IMAGE" | translate }}
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Course intro video area -->
+    <div class="course-vid-intro">
+      <label class="form-label mb-3">{{
+        "COURSE_INTRO_VIDEO" | translate
+      }}</label>
+
+      <div class="upload-custom-button">
+        <input
+          type="file"
+          class="form-control d-none"
+          accept="video/*"
+          #fileVideoInput
+          (change)="onFileVideoChange($event)"
+        />
+        <div class="custom-text-container">
+          <span class="custom-text-upload">{{
+            "COURSE_INTRO_VIDEO_NOT_SELECTED" | translate
+          }}</span>
+        </div>
+        <div class="custom-button-container">
+          <button
+            type="button"
+            class="cutom-upload-btn"
+            (click)="fileVideoInput.click()"
+          >
+            {{ "COURSE_UPLODED_INTRO_VIDEO" | translate }}
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Course level area -->
+    <div class="course-level">
+      <label class="form-label mb-3">{{
+        "COURSE_CHOOSE_LEVEL" | translate
+      }}</label>
+      <select
+        class="form-select"
+        [(ngModel)]="selectedLevelOption"
+        (change)="onLevelChange()"
+      >
+        <option
+          *ngFor="let option of optionsCourseLevels"
+          [value]="option.value"
+        >
+          {{ option.value | translate }}
+        </option>
+      </select>
+    </div>
+
+    <!-- Course description area -->
+    <div class="course-description">
+      <label class="form-label mb-3">{{
+        "COURSE_WRITE_DESCRIPTION" | translate
+      }}</label>
+      <textarea
+        class="form-control"
+        id="exampleFormControlTextarea1"
+        rows="3"
+      ></textarea>
+    </div>
+  </div>
+</div>
