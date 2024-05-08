@@ -1,0 +1,36 @@
+<!-- Similar courses Section -->
+
+<!-- <section class="similar-courses-section mt-2">
+  <div class="container">
+    <h3 class="pt-3">{{"SIMILAR_COURSES" | translate}}</h3>
+    <div class="row">
+      <div class="col-md-6 col-12 course-item p-2  " *ngFor="let card of similarCourseCards">
+        <div class="">
+          <div class="img-part ">
+            <img src="{{card.imageCard}}" alt="" loading="lazy" />
+          </div>
+          <div class="course-card-content">
+            <h3>{{card.title}}</h3>
+            <small>{{card.price}}</small>
+            <i class="cart-icon"><img src="../../../../../assets/images/teacher/cart.svg" alt="cart icon"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+
+<section class="similar-courses-section mt-2">
+  <div class="container">
+    <h3 class="pt-3">{{"SIMILAR_COURSES" | translate}}</h3>
+    <div class="row">
+      <div class="col-md-6 col-12 course-item p-2  " *ngFor="let course of similarCourseCards">
+        <similar-courses-card [Course]="course"></similar-courses-card>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+

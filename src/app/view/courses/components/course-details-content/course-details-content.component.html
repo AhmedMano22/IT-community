@@ -1,0 +1,93 @@
+<!-- Course details and payment section -->
+<section class="course-details-section pb-5">
+  <div class="container">
+    <div class="row d-flex">
+   <!-- Course details payment and cart -->
+      <div class="col-lg-4 col-12 course-detailss-right mt-2 pt-2">
+        <div class="course-overview-info d-flex flex-column">
+          <div class="check-out-table table-responsive">
+            <table class="table">
+              <tbody>
+                <tr class="price">
+                  <th scope="row">{{"PRICE"| translate}}</th>
+                  <td colspan="2">{{"EGY_POUND" |translate}}</td>
+                </tr>
+                <tr class="teacher">
+                  <th>
+                    <span class="underline-text">{{ "TEACHER2" | translate }}</span>
+                  </th>
+                  <td>{{"TEACHER_NAME" |translate}}</td>
+                </tr>
+                <tr class="rate-parent">
+                  <th scope="row">{{"RATING"| translate}}</th>
+                  <td>
+                    <div class="rating ">
+                      <div class="rate-content">
+                        <span>({{"RATE_NUMBER" |translate}})</span>
+                        <rating class="rate" [(ngModel)]="rate" [max]="rate" [readonly]="true"  ></rating>
+                        <span>{{"RATE" |translate}}</span>
+                      </div>
+                  </div>
+                  </td>
+                </tr>
+                <tr class="duraion">
+                  <th scope="row">{{"DURATION"| translate}}</th>
+                  <td>{{"DURATION_COUNT" |translate}}</td>
+                </tr>
+                <tr>
+                  <th scope="row">{{"LESSONS"| translate}}</th>
+                  <td>{{"COURCES_COUNT" |translate}}</td>
+                </tr>
+                <tr>
+                  <th scope="row">{{"PRACTICE"| translate}}</th>
+                  <td>{{"PRACTICE_COUNT" |translate}}</td>
+                </tr>
+                <tr>
+                  <th scope="row">{{"CERTIFICATE"| translate}}</th>
+                  <td>{{"YES_NO" |translate}}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <!-- Payment Button and Add to cart Button -->
+        <div class="payment-buttons">
+          <button class="btn payment-btn w-100 mt-3">{{"PAY_NOW" | translate}}</button>
+          <button class="btn add-cart-btn w-100 mt-3">{{"ADD_TO_CART" | translate}}</button>
+        </div>
+
+      </div>
+      <!-- Course details -->
+      <div class="col-lg-8 col-12 course-left-desc  mt-2 pt-5">
+        <div class="course-detailss-left ">
+          <h3>{{"COURSE_DETAILS" | translate}}</h3>
+          <p>{{"COURSE_CONTENT_INFO" |translate}}</p>
+          <p>{{"COURSE_CONTENT_INFO2" |translate}}</p>
+        </div>
+        <div class="who-course-for mt-4">
+          <h3>{{"TO_WHO_IS_THE_COURSE" | translate}}</h3>
+          <p>{{"TO_WHO_IS_THE_COURSE_CONTENT" |translate}}</p>
+        </div>
+        <div class="what-will-be-taught  mt-4">
+          <h3>{{"WHAT_THINGS_TO_LEARN"|translate}}</h3>
+          <ul>
+            <li >{{ "ITEM1" |translate }}</li>
+            <li >{{ "ITEM2" |translate }}</li>
+            <li >{{ "ITEM3" |translate }}</li>
+            <li >{{ "ITEM4" |translate }}</li>
+            <li >{{ "ITEM5" |translate }}</li>
+            <li >{{ "ITEM6" |translate }}</li>
+          </ul>
+        </div>
+        <div class="course-descc  mt-4">
+          <h3>{{"COURSE_DESCRIPTION" | translate}}</h3>
+          <p>{{"TO_WHO_IS_THE_COURSE_CONTENT" |translate}}</p>
+        </div>
+
+      </div>
+
+
+
+    </div>
+  </div>
+</section>

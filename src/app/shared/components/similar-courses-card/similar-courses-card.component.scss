@@ -1,0 +1,52 @@
+@import "../../../../assets/scss/colors";
+
+.parent{
+    padding: 15px;
+    display: flex;
+    gap: 10px;
+    .content{
+      h1{
+        color: #0A033C;
+        font-size: 20px;
+        margin-bottom: 5px;
+      }
+      .rating{
+        .rate {
+          color: #FFC107;
+          font-size: 25px;
+        }
+      }
+      .price{
+        position: relative;
+        .dollar{
+         color: $tomato-color;
+         font-size: 15px;
+         font-weight: 500;
+        }
+        .bookmark{
+          position: absolute;
+          right: 0;
+          top: -20px;
+          cursor: pointer;
+          border-radius: 10px;
+          -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          -ms-border-radius: 10px;
+          -o-border-radius: 10px;
+          transition: all .2s ease-in-out;
+          -webkit-transition: all .2s ease-in-out;
+          -moz-transition: all .2s ease-in-out;
+          -ms-transition: all .2s ease-in-out;
+          -o-transition: all .2s ease-in-out;
+          background-color: #F8F2FF;
+
+          .bx{
+            padding: 15px;
+            color: $light-purple-color;
+            font-size: 25px;
+          }
+
+        }
+      }
+    }
+  }

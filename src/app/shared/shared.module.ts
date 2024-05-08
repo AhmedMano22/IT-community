@@ -11,6 +11,7 @@ import { HttpClient } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { CourseCardComponent } from './components/course-card/course-card.component';
 import { FormsModule } from '@angular/forms';
+import { SimilarCoursesCardComponent } from './components/similar-courses-card/similar-courses-card.component';
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, '../../assets/i18n/', '.json');
 }
@@ -20,7 +21,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     NavbarComponent,
     UserProfileComponent,
     TeacherNavComponent,
-    CourseCardComponent
+    CourseCardComponent,
+    SimilarCoursesCardComponent
   ],
   imports: [
     CommonModule,
@@ -40,7 +42,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     UserProfileComponent,
     TeacherNavComponent,
     TranslateModule,
-    CourseCardComponent
+    CourseCardComponent,
+    SimilarCoursesCardComponent
   ]
 })
 export class SharedModule {

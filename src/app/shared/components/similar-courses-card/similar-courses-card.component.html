@@ -1,0 +1,18 @@
+<div class="parent bg-light">
+  <div class="img-part ">
+    <img [src]="Course.imageCard" alt="" loading="lazy" />
+  </div>
+  <div class="content w-100">
+    <h1>{{Course.title}}</h1>
+      <div class="rating ">
+        <rating class="rate" [(ngModel)]="rate" [max]="rate" [readonly]="true"  ></rating>
+      </div>
+      <div class="price mt-2 d-flex justify-content-between">
+          <span class="dollar"> {{Course.price}}</span>
+          <span class="bookmark" [style.background]="isBookmarked ? '#9C4DF4' : '#fff'" (click)="toggleBookmark()">
+            <i class='bx bx-shopping-bag' [style.color]="isBookmarked ? '#fff' : '#9C4DF4'"></i>
+          </span>
+      </div>
+  </div>
+
+</div>

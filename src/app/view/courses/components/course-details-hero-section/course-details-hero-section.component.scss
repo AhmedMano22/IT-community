@@ -1,0 +1,91 @@
+@import "../../../../../assets/scss/colors";
+
+// Course Lessons & videos Section
+.course-lessons-section {
+  .container {
+    background-color: #f7f9fa;
+  .course-lessons{
+    padding: 3rem;
+    .left_content {
+      .video-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 10px;
+        .video-element {
+          border-radius: 10px;
+        }
+        h4 {
+          color: #000000;
+          font-size: 1.25rem;
+        }
+      }
+    }
+
+    .right_content {
+      .course-lesson-details {
+        h3 {
+          color: $purple-color;
+          font-size: 1.25rem;
+        }
+        .lesson-item {
+          padding: 0.5rem;
+          .lesson-info {
+            h5 {
+              color: $purple-color;
+              margin-bottom: 0;
+            }
+            small {
+              color: $tomato-color;
+            }
+          }
+          &:hover,
+          &:active {
+            cursor: pointer;
+            box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.3);
+          }
+        }
+      }
+    }
+  }
+  }
+}
+@media screen and (max-width: 991px) {
+  .course-lessons-section {
+    .container {
+      .course-lessons {
+        flex-direction: column-reverse;
+        padding: 3rem 0 0 0;
+        .left_content {
+          width: 100%;
+          .video-container {
+            width: 100%;
+            h4 {
+              font-size: 1.15rem;
+            }
+          }
+        }
+        .right_content {
+          width: 100%;
+          .course-lesson-details {
+            h3 {
+              font-size: 1.25rem;
+            }
+            .lesson-item {
+              .lesson-info {
+                h5 {
+                  font-size: 14px;
+
+                }
+                small {
+                  font-size: 0.75rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

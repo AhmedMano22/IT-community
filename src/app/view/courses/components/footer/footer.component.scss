@@ -1,0 +1,83 @@
+@import "../../../../../assets/scss/colors";
+
+//Subscribe Section
+.subscribe {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  .container {
+    position: relative;
+    background-color: $purple-color;
+    border-radius: 14px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25), 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    padding: 20px;
+
+    h1 {
+      color: $floralwhite-color;
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 144%;
+      letter-spacing: 0.02em;
+    }
+
+    p {
+      color: $floralwhite-color;
+      font-weight: 500;
+      font-size: 15px;
+      color: $wightcolor;
+    }
+    .input-wrapper {
+      position: relative;
+      margin: 15px 3rem 0 3rem;
+      form {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        button {
+          position: absolute;
+          right: 3px;
+          top: 3px;
+          background-color: $orange-color;
+          border: none;
+          color: $wightcolor;
+          padding: 6px 26px;
+          font-size: 13px;
+        }
+
+        input {
+          width: 100%;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 144%;
+          letter-spacing: 0.02em;
+          color: #8a8a8a;
+          padding: 9px 20px;
+          border: none;
+        }
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        width: 85px;
+        height: 80px;
+        background-image: url("../../../../../assets/images/home/lamp2.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        top: -10px;
+        left: 0;
+      }
+      @media (max-width: 767px) {
+        & {
+          margin: 15px 0 0;
+        }
+        form {
+          width: 100%;
+        }
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+}

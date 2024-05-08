@@ -1,0 +1,31 @@
+<!-- Course Lessons & videos Section -->
+<section class="course-lessons-section pt-5">
+  <div class="container">
+    <div class="row d-flex course-lessons ">
+      <!-- Left content -->
+      <div class="col-4 right_content">
+        <div class="course-lesson-details d-flex flex-column   gap-2">
+          <h3>{{"COURSE_CONTENT"| translate}}</h3>
+          <div class="lesson-item d-flex gap-2 " *ngFor="let lesson of lessons">
+            <img src="../../../../../assets/images/teacher/lesson.png" alt="" />
+            <div class="lesson-info">
+              <h5>{{"INTRO" |translate}}</h5>
+              <small>1:57</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Right content -->
+      <div class="col-8  left_content">
+        <div class="video-container">
+          <video class="video-element w-100 h-100" controls poster="assets/images/teacher/Video.png">
+            <source src="assets/vedio/UniMates-update.mp4" type="video/mp4" />
+          </video>
+          <h4 class="video-title">{{"DEFINATION" |translate}}</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

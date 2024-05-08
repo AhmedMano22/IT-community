@@ -119,12 +119,50 @@
   "COURSE_DESCRIPTION": "Course description",
   "SIMILAR_COURSES": "Similar courses",
   "PRICE": "Price",
-  "TEACHERR": "Teacher ",
+  "TEACHER2": "Teacher ",
   "RATING": "Rating",
   "DURATION": "Duration",
   "LESSONS": "Lessons",
   "PRACTICE": "Projects",
   "CERTIFICATE": "Certificate",
   "PAY_NOW": "Pay now",
-  "ADD_TO_CART": "Add to cart"
+  "ADD_TO_CART": "Add to cart",
+  "INTRO":"Math - Introduction",
+  "DEFINATION":"Maths - introductory video",
+  "EGY_POUND":"400 Egyptian pounds",
+  "TEACHER_NAME":"Ahmed Yousef",
+  "DURATION_COUNT":"50 hour",
+  "COURCES_COUNT":"22",
+  "PRACTICE_COUNT":"4",
+  "YES_NO":"Yes",
+  "COURSE_CONTENT_INFO":"This course includes Algebra I, Algebra II, and Geometry. Then learn how to solve equations, understand functions, explore the characteristics of geometry students, and begin to learn about the concepts used in calculus.",
+  "COURSE_CONTENT_INFO2":"It also includes topics such as differential and integral calculus, linear algebra, and statistics. These courses are useful for students who want to deepen their understanding of mathematics and its application in fields such as science, engineering, and economics.",
+  "TO_WHO_IS_THE_COURSE_CONTENT":"The Advanced Mathematics course is specifically designed to provide students with a deep understanding of the mathematical concepts that form the basis of many scientific and engineering applications. The course is mainly aimed at students at upper secondary or university level who wish to enhance their mathematical skills to prepare for higher studies in fields such as engineering, physics, and economics.",
+  "ITEM1":"Understanding algebraic and logarithmic functions",
+  "ITEM2":"Theory of equations",
+  "ITEM3":"Algebraic analysis",
+  "ITEM4":"Differentiation and integration techniques",
+  "ITEM5":"Practical applications of integration",
+  "ITEM6":"Basics of statistics",
+  "RATE_NUMBER":"55 rate",
+  "RATE":"4.6",
+  "MUSK":"The Three Musketeers",
+  "DOLLAR":"$400"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
