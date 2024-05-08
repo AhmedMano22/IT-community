@@ -1,1 +1,25 @@
-<p>welcome works!</p>
+<div class="row justify-content-center welcome-container">
+  <div class="col-12 p-3">
+    <!-- Introduction -->
+    <div class="welcome-intro">
+      <h3>{{ "WRITE_MESSAGE" | translate }}</h3>
+      <p>{{ "WRITE_MESSAGE_CAPTION" | translate }}</p>
+    </div>
+
+    <!-- weclome message -->
+    <div class="welcome-message mb-3">
+      <label for="" class="form-label">{{
+        "WELCOME_MESSAGE" | translate
+      }}</label>
+      <textarea class="form-control" name="welcomeMessage" rows="6"></textarea>
+    </div>
+    <!-- congrats message -->
+
+    <div class="welcome-message mb-3">
+      <label for="" class="form-label">{{
+        "CONGRATS_MESSAGE" | translate
+      }}</label>
+      <textarea class="form-control" name="congratsMessage" rows="6"></textarea>
+    </div>
+  </div>
+</div>

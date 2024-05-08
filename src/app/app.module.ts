@@ -7,7 +7,7 @@ import { SharedModule } from './shared/shared.module';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient } from '@angular/common/http';
 import { HttpClientModule } from '@angular/common/http'; // Import HttpClientModule
-
+import { ReactiveFormsModule } from '@angular/forms';
 
 import {
   TranslateLoader,
@@ -19,9 +19,7 @@ import { MaterialModule } from './material/material/material.module';
 import { FormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -29,11 +27,10 @@ import { FormsModule } from '@angular/forms';
     HttpClientModule,
     FormsModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    ReactiveFormsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule {
-
- }
+export class AppModule {}

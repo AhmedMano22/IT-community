@@ -1,1 +1,78 @@
-<p>publish works!</p>
+<div class="row justify-content-start publish-interface">
+  <div class="col-12 d-flex flex-column gap-5 p-3 publish-container">
+    <!-- Instructions Intro area -->
+    <div class="instructions-intro">
+      <h3>{{ "PRE-COURSE-INSTRUCTIONS" | translate }}</h3>
+    </div>
+
+    <!-- Instruction No.1 -->
+    <div
+      class="instruction-1 d-flex justify-content-start align-items-center gap-2"
+    >
+      <p>{{ "INSTRUCTION_1" | translate }}</p>
+      <a 
+        ><img
+          src="../../../../../assets/images/teacher/profile-icon.svg"
+          alt=""
+      /></a>
+      <a class="status-group text-decoration-none"
+        ><span class="red-span font-weight-bold">{{
+          "UNCOMPLETED" | translate
+        }}</span
+        ><img
+          src="../../../../../assets/images/teacher/dismiss-circle.svg"
+          alt=""
+      /></a>
+    </div>
+    <!-- Instruction No.2 -->
+    <div
+      class="instruction-2 d-flex justify-content-start align-items-center gap-2"
+    >
+      <p>{{ "INSTRUCTION_2" | translate }}</p>
+      <a class=""
+        ><img src="../../../../../assets/images/teacher/money-icon.svg" alt=""
+      /></a>
+      <a class="status-group text-decoration-none"
+        ><span class="green-span font-weight-bold">{{
+          "COMPLETED" | translate
+        }}</span
+        ><img src="../../../../../assets/images/teacher/tick-circle.svg" alt=""
+      /></a>
+    </div>
+    <!-- Instruction No.3 -->
+    <div
+      class="instruction-3 d-flex justify-content-start align-items-center gap-2"
+    >
+      <p>{{ "INSTRUCTION_3" | translate }}</p>
+
+      <a class="status-group text-decoration-none"
+        ><img src="../../../../../assets/images/teacher/eye-icon.svg" alt=""
+      /></a>
+      <span class="text-black font-weight-bold">{{
+        "OPTIONAL" | translate
+      }}</span>
+    </div>
+
+    <!-- Ready to publish your course? -->
+    <div
+      class="can-post-course d-flex justify-content-start align-items-center gap-5"
+    >
+      <label class="form-label">{{ "NOW_COURSE_CAN_POST" | translate }}</label>
+      <button type="button" class="btn valid-post-button">
+        {{ "POST_COURSE" | translate }}
+      </button>
+    </div>
+
+    <!-- Course not ready to be published -->
+    <div
+      class="course-not-ready d-flex justify-content-start align-items-center gap-5"
+    >
+      <label class="form-label">{{
+        "POST_CANNOT_BE_POSTED" | translate
+      }}</label>
+      <button type="button" class="btn invalid-post-button">
+        {{ "POST_COURSE" | translate }}
+      </button>
+    </div>
+  </div>
+</div>

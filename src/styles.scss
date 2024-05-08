@@ -8,6 +8,8 @@
 @import 'ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
 /* end owl-carsoral */
 @import "assets/scss/style.scss";
+@import "./assets/scss/_colors.scss";
+
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 ::-webkit-scrollbar {
