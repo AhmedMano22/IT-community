@@ -29,6 +29,19 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .welcome-container {
+    p,
+    textarea {
+      width: 100%;
+      font-size: 1rem;
+    }
+    h3,
+    label {
+      font-size: 1.25rem;
+    }
+  }
+}
 @media screen and (min-width: 1200px) {
   .welcome-container {
     p {

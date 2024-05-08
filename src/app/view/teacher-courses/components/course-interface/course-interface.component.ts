@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { FileUploadModule } from 'primeng/fileupload';
 
 @Component({
   selector: 'course-interface',
@@ -9,6 +8,8 @@ import { FileUploadModule } from 'primeng/fileupload';
 export class CourseInterfaceComponent {
   imgFileName = '';
   vidFileName = '';
+  noVidSelected = "COURSE_INTRO_VIDEO_NOT_SELECTED";
+
   constructor() {
     this.selectedCategoryOption = 'CHOOSE_COURSE_CATAGORY_PLACEHOLDER';
     this.selectedLevelOption = 'COURSE_CHOOSE_LEVEL_PLACEHOLDER';

@@ -1,7 +1,8 @@
 @import "../../../../../assets/scss/colors";
 
 .course-interface {
-  .course-img-cover, .course-vid-intro {
+  .course-img-cover,
+  .course-vid-intro {
     display: flex;
     flex-direction: column;
 
@@ -15,7 +16,6 @@
         font-size: 1.25rem;
       }
       .custom-button-container {
-
         .cutom-upload-btn {
           background-color: $purple-color;
           color: #ffffff;
@@ -32,17 +32,18 @@
 label {
   color: $fire-brick-color;
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.25;
 }
 
 input,
 select,
 textarea {
-  width: 50%;
+  width: 75%;
   font-size: 1.25rem;
   font-weight: 400;
 }
+
 input:focus,
 select:focus,
 textarea:focus {
@@ -50,10 +51,19 @@ textarea:focus {
   border: none;
   box-shadow: 0px 0px 5px $purple-color;
 }
-@media screen and (max-width: 991px) {
 
+@media screen and (max-width: 991px) {
   .course-interface {
-    .course-img-cover, .course-vid-intro {
+    label {
+      font-size: 1.25rem;
+    }
+    select,
+    input, textarea {
+      width: 100%;
+      font-size: 1rem;
+    }
+    .course-img-cover,
+    .course-vid-intro {
       .upload-custom-button {
         .custom-text-container {
           font-size: 1rem;
@@ -66,13 +76,5 @@ textarea:focus {
       }
     }
   }
-
-input,
-select,
-textarea {
-  width: 75%;
-  font-size: 1.25rem;
-  font-weight: 400;
-}
 
 }

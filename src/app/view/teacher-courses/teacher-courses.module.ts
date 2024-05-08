@@ -15,7 +15,9 @@ import { PublishComponent } from './components/publish/publish.component';
 import { FileUploadModule } from 'primeng/fileupload';
 import { MaterialModule } from 'src/app/material/material/material.module';
 
-import {ReactiveFormsModule } from '@angular/forms'; // import FormsModule
+import {ReactiveFormsModule } from '@angular/forms';
+import { CourseDetailsComponent } from './components/course-details/course-details.component'; // import FormsModule
+ // Import the NgxRatingModule
 
 
 
@@ -28,7 +30,9 @@ import {ReactiveFormsModule } from '@angular/forms'; // import FormsModule
     ContentCreationComponent,
     PricingComponent,
     WelcomeComponent,
-    PublishComponent
+    PublishComponent,
+    CourseDetailsComponent,
+
   ],
   imports: [
     CommonModule,
@@ -37,7 +41,8 @@ import {ReactiveFormsModule } from '@angular/forms'; // import FormsModule
     SharedModule,
     FileUploadModule,
     MaterialModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+
   ]
 })
 export class TeacherCoursesModule { }

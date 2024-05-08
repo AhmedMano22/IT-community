@@ -1,42 +1,104 @@
-
 <div class="container-fluid">
   <div class="row">
     <div class="col navigation">
       <div class="nav-logo">
-        <img src="assets/images/auth/auth-logo.png" loading="lazy" class="align-text-center" alt="Logo-Image">
+        <img
+          src="assets/images/auth/auth-logo.png"
+          loading="lazy"
+          class="align-text-center"
+          alt="Logo-Image"
+        />
       </div>
       <div class="nav-back">
-        <a  [routerLink]="['', 'Teacher']">{{"BACK" |translate}}</a>
+        <a [routerLink]="['', 'Teacher']">{{ "BACK" | translate }}</a>
       </div>
     </div>
   </div>
-  <div class="row position-relative  " style="z-index: 0;">
-    <div class="col-md-auto sidebar ">
-      <div class="logo ">
-        <img src="assets/images/auth/auth-logo.png" loading="lazy" class="align-text-center" alt="Logo-Image">
+  <div class="row position-relative" style="z-index: 0">
+    <div class="col-md-auto sidebar">
+      <div class="logo">
+        <img
+          src="assets/images/auth/auth-logo.png"
+          loading="lazy"
+          class="align-text-center"
+          alt="Logo-Image"
+        />
       </div>
-      <div class="radios d-flex ">
-        <label><input type="radio"  name="component" value="interface" [(ngModel)]="selectedComponent">{{"COURSE_INTERFACE" |translate}}</label>
-        <label><input type="radio" name="component" value="targets" [(ngModel)]="selectedComponent" >{{"TARGETS" |translate}}</label>
-        <label><input type="radio" name="component" value="creation"   [(ngModel)]="selectedComponent">{{"CONTENT_CREATION" |translate}}</label>
-        <label><input type="radio" name="component" value="pricing"   [(ngModel)]="selectedComponent">{{"PRICING" |translate}}</label>
-        <label><input type="radio" name="component" value="welcome"   [(ngModel)]="selectedComponent">{{"WELECME" |translate}}</label>
-        <label><input type="radio" name="component" value="publish"   [(ngModel)]="selectedComponent">{{"PUBLISING" |translate}}</label>
-
+      <div class="radios d-flex">
+        <label
+          ><input
+            type="radio"
+            name="component"
+            value="interface"
+            [(ngModel)]="selectedComponent"
+          />{{ "COURSE_INTERFACE" | translate }}</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="component"
+            value="targets"
+            [(ngModel)]="selectedComponent"
+          />{{ "TARGETS" | translate }}</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="component"
+            value="creation"
+            [(ngModel)]="selectedComponent"
+          />{{ "CONTENT_CREATION" | translate }}</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="component"
+            value="pricing"
+            [(ngModel)]="selectedComponent"
+          />{{ "PRICING" | translate }}</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="component"
+            value="welcome"
+            [(ngModel)]="selectedComponent"
+          />{{ "WELECME" | translate }}</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="component"
+            value="publish"
+            [(ngModel)]="selectedComponent"
+          />{{ "PUBLISING" | translate }}</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="component"
+            value="details"
+            [(ngModel)]="selectedComponent"
+          />course details - testing</label
+        >
       </div>
     </div>
 
-    <div class="col-md p-3 content " style="min-height: calc(100vh);">
+    <div class="col-md p-3 content" style="min-height: calc(100vh)">
       <div class="back">
-        <a  [routerLink]="['', 'Teacher']">{{"BACK" |translate}}</a>
+        <a [routerLink]="['', 'Teacher']">{{ "BACK" | translate }}</a>
       </div>
-      <course-interface *ngIf="selectedComponent === 'interface'"></course-interface>
+      <course-interface
+        *ngIf="selectedComponent === 'interface'"
+      ></course-interface>
       <targets *ngIf="selectedComponent === 'targets'"></targets>
-      <content-creation *ngIf="selectedComponent === 'creation'"></content-creation>
+      <content-creation
+        *ngIf="selectedComponent === 'creation'"
+      ></content-creation>
       <pricing *ngIf="selectedComponent === 'pricing'"></pricing>
       <welcome *ngIf="selectedComponent === 'welcome'"></welcome>
       <publish *ngIf="selectedComponent === 'publish'"></publish>
-
-  </div>
+      <course-details *ngIf="selectedComponent === 'details'"></course-details>
+    </div>
   </div>
 </div>

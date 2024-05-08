@@ -90,26 +90,41 @@
   "COURSE_CHOOSE_LEVEL_PLACEHOLDER": "Course level",
   "COURSE_WRITE_DESCRIPTION": "6. Write a description of the course",
   "TARGET_DESCRIPTION": "The following description will generally appear on the course introductory page and will have a direct impact on the success of your course. These descriptions will help learners decide whether your course fits their needs or otherwise.",
-
   "WHAT_YOU_WILL_LEARN": " 1- What will you learn in your course?",
-
   "WHAT_YOU_WILL_LEARN_CONTENT": "you must write down at least 3 learning outcomes or objectives learners can expect to achieve by completing the course.",
-
   "PRE_REQUISITES_TO_JOIN": " 2- What are the pre-requisites to join your course?",
-
   "PRE_REQUISITES_TO_JOIN_CONTENT": "List the required skills, experience, tools or equipment learners should possess before joining your course. If there are no requirements, also let them know.",
-
   "APPROPRITE_COURSE_LEARNER": "3. Who is the right person for this course?",
-
   "APPROPRITE_COURSE_LEARNER_DESC": "Write a clear description of your course target learners, who will find your course content very valuable. This will help attract the right students for your course.",
-
   "ADD_MORE_TARGETS": "+ Add more",
-
   "WRITE_MESSAGE": "Write your students welcoming messages",
-
   "WRITE_MESSAGE_CAPTION": "Writiting messages to your students will be automatically sent out when they join or complete the course to encourage students to engage with the course content. If you don't want to send a welcome or congratulatory message, leave the text box blank.",
-
   "WELCOME_MESSAGE": "1. Write a welcome message",
-
-  "CONGRATS_MESSAGE": "2. Write a congrats message"
+  "CONGRATS_MESSAGE": "2. Write a congrats message",
+  "PRE-COURSE-INSTRUCTIONS": "Guidelines before publishing your training course.",
+  "INSTRUCTION_1": "1- you must complete all your personal Information inside your profile.",
+  "INSTRUCTION_2": "2- Add a payment method to get your profits.",
+  "INSTRUCTION_3": "3- Review the content yourself exactly as it is displayed to students.",
+  "NOW_COURSE_CAN_POST": " Now you can publish your course ",
+  "POST_COURSE": "Publish course ",
+  "POST_CANNOT_BE_POSTED": "The course cannot be published before completing the previous steps.",
+  "UNCOMPLETED": "Incomplete",
+  "COMPLETED": "Complete",
+  "OPTIONAL": "Optional",
+  "COURSE_CONTENT": "Course content",
+  "COURSE_DETAILS": "Course details",
+  "TO_WHO_IS_THE_COURSE": "Who is the course for?",
+  "WHAT_THINGS_TO_LEARN": "What will you learn in this course?",
+  "THINGS_TO_LEARN": " What will you learn in this course? ",
+  "COURSE_DESCRIPTION": "Course description",
+  "SIMILAR_COURSES": "Similar courses",
+  "PRICE": "Price",
+  "TEACHERR": "Teacher ",
+  "RATING": "Rating",
+  "DURATION": "Duration",
+  "LESSONS": "Lessons",
+  "PRACTICE": "Projects",
+  "CERTIFICATE": "Certificate",
+  "PAY_NOW": "Pay now",
+  "ADD_TO_CART": "Add to cart"
 }
