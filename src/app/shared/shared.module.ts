@@ -4,11 +4,13 @@ import { CommonModule } from '@angular/common';
 import { SharedRoutingModule } from './shared-routing.module';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { TranslateLoader, TranslateModule, TranslateService } from '@ngx-translate/core';
-
+import { RatingModule } from 'ngx-bootstrap/rating';
 import { TeacherNavComponent } from './components/teacher-nav/teacher-nav.component';
 import { UserProfileComponent } from './components/user-profile/user-profile.component';
 import { HttpClient } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { CourseCardComponent } from './components/course-card/course-card.component';
+import { FormsModule } from '@angular/forms';
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, '../../assets/i18n/', '.json');
 }
@@ -17,12 +19,14 @@ export function HttpLoaderFactory(http: HttpClient) {
   declarations: [
     NavbarComponent,
     UserProfileComponent,
-    TeacherNavComponent
+    TeacherNavComponent,
+    CourseCardComponent
   ],
   imports: [
     CommonModule,
+    FormsModule,
     SharedRoutingModule,
-
+    RatingModule.forRoot(),
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
@@ -35,7 +39,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     NavbarComponent,
     UserProfileComponent,
     TeacherNavComponent,
-    TranslateModule
+    TranslateModule,
+    CourseCardComponent
   ]
 })
 export class SharedModule {

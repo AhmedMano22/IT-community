@@ -1,1 +1,60 @@
-<p>pricing works!</p>
+<!-- <div class="container mt-4">
+  <div class="row">
+    <div class="col-12">
+      <h1>{{"CHOOSE_CURRENCY_PRICE" |translate}}</h1>
+      <p>{{"CHOOSE_CURRENCY_DESC" |translate}}</p>
+    </div>
+
+      <div class="col-6 currency-selection">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">{{"CURRENCY" |translate}}</label>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>{{"CHOOSE_CURRENCY" |translate}}</option>
+            <option value="1">{{"CURRENCY1" |translate}}</option>
+            <option value="2">{{"CURRENCY2" |translate}}</option>
+            <option value="3">{{"CURRENCY3" |translate}}</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-6 currency-selection">
+        <div class="mb-3">
+          <label  class="form-label">{{"PRICE" |translate}}</label>
+          <input class="form-control" type="text" [placeholder]="'ENTER_PRICE' | translate" aria-label="default input example">
+        </div>
+      </div>
+
+  </div>
+</div> -->
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-12">
+      <h1>{{"CHOOSE_CURRENCY_PRICE" | translate}}</h1>
+      <p>{{"CHOOSE_CURRENCY_DESC" | translate}}</p>
+    </div>
+  </div>
+
+  <!-- Form Start -->
+  <form class="mt-5">
+    <div class="row">
+      <div class="col-md-6 col-12 currency-selection">
+        <div class="mb-3">
+          <label for="currencySelect" class="form-label">{{"CURRENCY" | translate}}</label>
+          <select class="form-select" id="currencySelect" aria-label="Default select example">
+            <option selected>{{"CHOOSE_CURRENCY" | translate}}</option>
+            <option value="1">{{"CURRENCY1" | translate}}</option>
+            <option value="2">{{"CURRENCY2" | translate}}</option>
+            <option value="3">{{"CURRENCY3" | translate}}</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-12 currency-selection">
+        <div class="mb-3">
+          <label for="priceInput" class="form-label">{{"PRICE" | translate}}</label>
+          <input class="form-control" type="text" id="priceInput" [placeholder]="'ENTER_PRICE' | translate" aria-label="default input example">
+        </div>
+      </div>
+    </div>
+  </form>
+  <!-- Form End -->
+</div>

@@ -1,1 +1,109 @@
-<p>content-creation works!</p>
+<!--
+
+
+<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header mb-0">
+      <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+       {{"DEPART1" |translate}}
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <div class="depart-body">
+          <div class="depart-title">
+           <h3> {{"DEPART1" |translate}}:</h3>
+          </div>
+          <div class="depart-content">
+           <div>
+             <input class="form-control" type="text" [placeholder]="'ADD_SECTION_TITLE' | translate"  aria-label="default input example">
+           </div>
+             <div *ngFor="let lecture of lectures; let i = index" class="row lecture-container mt-3">
+              <div class="col-lg-8 col-12 lecture-info mb-2 mt-2">
+                <label  class="form-label mb-0">{{ "LECTURE" | translate }} {{i+1}} :</label>
+                <input class="form-control border-0" type="text" [placeholder]="'ADD_LECTURE_TITLE' | translate" aria-label="default input example">
+              </div>
+              <div class="col-lg-4 col-12 add-contnet d-flex justify-content-center mb-2 mt-2">
+                <button class="btn" >{{ "ADD_CONTENT" | translate }}</button>
+                <div class="actions">
+                  <i class="fa-solid fa-pen icon fs-5"></i>
+                  <button class="border-0 bg-transparent" (click)="remove(i)">
+                    <i class="fa-solid fa-trash-can icon fs-5"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="mb-2 mt-2 add-lecture">
+              <button class="btn"  (click)="addLecture()">{{"ADD_LECTURE_ITEM" |translate}}</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+<div class="mb-2 mt-2 add-section">
+  <button class="btn"  >{{"ADD_SECTION" |translate}}</button>
+</div> -->
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-12 header-content">
+      <h1>{{"GUIDLINES" | translate}}</h1>
+      <p>{{"GUIDLINES_DESC" | translate}}</p>
+    </div>
+  </div>
+
+
+<div class="row mt-5">
+  <div *ngFor="let section of sections; let sIndex = index">
+    <div class="accordion" [id]="'accordionExample' + sIndex">
+      <div class="accordion-item">
+        <h2 class="accordion-header mb-0">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" [attr.data-bs-target]="'#collapse' + sIndex" aria-expanded="true" [attr.aria-controls]="'collapse' + sIndex">
+            {{ "DEPART" | translate }} {{sIndex + 1}}
+          </button>
+        </h2>
+        <div [id]="'collapse' + sIndex" class="accordion-collapse collapse show" [attr.data-bs-parent]="'#accordionExample' + sIndex">
+          <div class="accordion-body">
+            <div class="depart-body">
+              <div class="depart-title">
+                <h3> {{ "DEPART" | translate }}: {{sIndex + 1}}</h3>
+              </div>
+              <div class="depart-content">
+                <div class="row">
+                  <div class="col-12 p-0">
+                    <input class="form-control" type="text" [placeholder]="'ADD_SECTION_TITLE' | translate" aria-label="default input example">
+                  </div>
+                </div>
+                <div *ngFor="let lecture of section.lectures; let lIndex = index" class="row lecture-container mt-3">
+                  <div class="col-lg-8 col-12 lecture-info mb-2 mt-2">
+                    <label class="form-label mb-0">{{ "LECTURE" | translate }} {{ lIndex + 1 }}:</label>
+                    <input class="form-control border-0" type="text" [placeholder]="'ADD_LECTURE_TITLE' | translate" aria-label="default input example">
+                  </div>
+                  <div class="col-lg-4 col-12 add-content add-contnet d-flex justify-content-center mb-2 mt-2">
+                    <button class="btn">{{ "ADD_CONTENT" | translate }}</button>
+                    <div class="actions">
+                      <i class="fa-solid fa-pen icon fs-5"></i>
+                      <button class="border-0 bg-transparent" (click)="removeLecture(sIndex, lIndex)">
+                        <i class="fa-solid fa-trash-can icon fs-5"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="mb-2 mt-2 add-lecture">
+                  <button class="btn" (click)="addLecture(sIndex)">{{ "ADD_LECTURE_ITEM" | translate }}</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mb-2 mt-2 add-section">
+    <button class="btn" (click)="addSection()">{{ "ADD_SECTION" | translate }}</button>
+  </div>
+</div>
+

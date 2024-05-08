@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -7,6 +7,8 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent {
+  @Input() showUserProfile: boolean = false;
+  @Input() showAuthButtons: boolean = true;
   islogin:boolean=false;
   defaultLanguageFlag: string='';
   isLoginActive: boolean = true;

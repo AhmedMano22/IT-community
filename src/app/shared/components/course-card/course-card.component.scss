@@ -1,0 +1,150 @@
+@import '../../../../assets/scss/colors';
+
+
+.card{
+  box-shadow:0px 0px 18px 0 #cdd1d7;
+  border: 0;
+   margin-bottom: 30px;
+   .course-image{
+    position: relative;
+    .book-mark{
+      position: absolute;
+      font-size: 40px;
+      position: absolute;
+      left: 10px;
+      top: 10px;
+      cursor: pointer;
+    }
+   }
+  .card-body{
+    padding: 1rem 0.5rem;
+    .reviews{
+      display: flex;
+      justify-content: space-between;
+
+      .record {
+
+        span{
+          margin-left: 6px;
+          color: $darkBlue-color;
+          font-size: 12px;
+          font-weight: 500;
+        }
+
+      }
+      .rating{
+        .rate-content{
+          .rate {
+            color: #FFC107;
+            font-size: 19px;
+          }
+          span{
+            margin: 0 6px;
+            color: #6A6B6C;
+            font-size: 12px;
+            color: #FFC107;
+          }
+
+        }
+
+
+        // span:last-child{
+        //   font-size: 10px;
+        //   display: block;
+        //   margin-top: -5px;
+        // }
+      }
+
+    }
+    .money-content{
+      margin-top: 5px;
+      .money-amount{
+        color: $darkBlue-color;
+      }
+    }
+    .course-details{
+      h1{
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 5px !important;
+        color: #334456;
+      }
+      p{
+        color: $smoothGray-color;
+        font-size: 12px;
+      }
+    }
+
+    @media (max-width:500px) {
+      .tutor-details{
+        h5{
+          font-size: 25px;
+        }
+        p{
+          font-size: 16px;
+        }
+    }
+    }
+    .action-btns{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      span{
+        color: $smoothGray-color;
+        font-weight: 500;
+      }
+      .details{
+        border: 0;
+        font-weight: 400;
+        color: $wight-color;
+        padding: 11px 25px;
+        font-size: 15px;
+        border-radius: 11px;
+        -webkit-border-radius: 11px;
+        -moz-border-radius: 11px;
+        -ms-border-radius: 11px;
+        -o-border-radius: 11px;
+}
+
+      .details{
+          background-color: $main-color;
+        }
+    }
+  }
+
+}
+
+.maincontainer > .front
+{
+
+    transform: perspective(600px) rotateY(0deg);
+
+
+    backface-visibility: hidden;
+    transition: transform .5s linear 0s;
+}
+
+
+.maincontainer > .back
+{
+
+    transform: perspective(600px) rotateY(180deg);
+    background: #262626;
+    color: #fff;
+display: none;
+    border-radius: 10px;
+    padding: 5px;
+    backface-visibility: hidden;
+    transition: transform .5s linear 0s;
+}
+
+.maincontainer:hover > .front
+{
+    transform: perspective(600px) rotateY(-180deg);
+}
+
+.maincontainer:hover > .back
+{
+    transform: perspective(600px) rotateY(0deg);
+}
+

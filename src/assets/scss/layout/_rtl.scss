@@ -120,5 +120,41 @@ html[dir="rtl"] {
 }
 
 }
+
+
+
+ /* content creation page in teacher cources module */
+
+.accordion-button::after {
+  position: absolute;
+  left: 20px;
+}
+ /* course card page in  cources module */
+ .course-image{
+  position: relative;
+  .book-mark{
+    font-size: 40px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+  }
+ }
+ .button-search{
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 0.375rem !important;
+  border-bottom-right-radius: 0.375rem !important;
+ }
+ .input-search{
+  border-top-left-radius: 0.375rem !important;
+  border-bottom-left-radius: 0.375rem !important;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+ }
+ .form-floating>label{
+  right: -60px;
+ }
+
 }
 

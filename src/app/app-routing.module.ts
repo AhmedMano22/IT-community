@@ -26,6 +26,16 @@ const routes: Routes = [
     loadChildren: () =>
       import('./view/teacher-courses/teacher-courses.module').then((m) => m.TeacherCoursesModule),
   },
+  {
+    path: 'Courses',
+    loadChildren: () =>
+      import('./view/courses/courses.module').then((m) => m.CoursesModule),
+  },
+  {
+    path:"**",
+    redirectTo: '',
+  }
+
 ];
 
 @NgModule({

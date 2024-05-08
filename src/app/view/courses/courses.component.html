@@ -1,0 +1,39 @@
+<app-navbar [showUserProfile]="true" [showAuthButtons]="false"></app-navbar>
+
+<section class="pb-4 pt-5 ">
+  <div class="container ">
+      <div class="row">
+        <div class="col-md-7 col-12 mb-5">
+         <div class="input-group flex-nowrap" style="height: 44px;">
+            <span class="input-group-text button-search" id="addon-wrapping"><i class='bx bx-search'></i></span>
+            <input type="text" class="form-control input-search" [placeholder]="'SEARCH_HERE' |translate" aria-label="Username" aria-describedby="addon-wrapping">
+          </div>
+
+        </div>
+         <div class="col-md-5 col-12 mb-4">
+              <p-floatLabel>
+                <p-dropdown
+                    [options]="cities"
+                    [(ngModel)]="selectedCity"
+                    optionLabel="name"
+                    inputId="float-label"
+                    [autoDisplayFirst]="false">
+                    <ng-template let-city pTemplate="item">
+                        <div>{{ city.name | translate }}</div>
+                    </ng-template>
+                    <ng-template let-city pTemplate="selectedItem">
+                        <!-- Ensure the selected item template also translates the label -->
+                        <div *ngIf="city">{{ city.name | translate }}</div>
+                    </ng-template>
+                </p-dropdown>
+                <label class="w-100" for="float-label" style="right: 0.75rem;">{{ 'SORT_BY' | translate }}</label>
+            </p-floatLabel>
+        </div>
+          <div class="col-lg-4 col-md-6 col-12" *ngFor="let course of Cources ">
+           <course-card [Course]="course"></course-card>
+          </div>
+      </div>
+  </div>
+
+</section>
+<!-- <router-outlet></router-outlet> -->

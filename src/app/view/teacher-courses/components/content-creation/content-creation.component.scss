@@ -1,0 +1,97 @@
+@import "../../../../../assets/scss/colors";
+.container{
+  .header-content{
+    h1{
+      color: $fire-brick-color;
+      font-size: 28px;
+      font-weight: 500;
+      @media (max-width:500px) {
+        &{
+          font-size: 24px;
+        }
+      }
+    }
+    p{
+      color: $black-color;
+      font-size: 17px;
+      font-weight: 400;
+    }
+  }
+  .accordion-body{
+    background-color: #F7F9FA;
+  .depart-body{
+    display: flex;
+    justify-content: space-between;
+    .depart-title{
+      h3{
+        font-weight: 500;
+      }
+    }
+    .depart-content{
+      width: 90%;
+    }
+
+    .lecture-container{
+      padding: 9px;
+      display: flex;
+      background-color: #fff;
+      .lecture-info{
+
+        display: flex;
+        align-items: center;
+        input{
+          width: 74%;
+          &:focus{
+            box-shadow: none;
+          }
+        }
+        label{
+          font-weight: 500;
+        }
+
+      }
+      .add-contnet{
+        align-items: center;
+        gap: 15px;
+        .btn{
+          background-color: $purple-color;
+          color: $wightcolor;
+          border-radius: 20px;
+          font-size: 12px;
+        }
+        .actions{
+          display: flex;
+          gap: 5px;
+          .icon{
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .add-lecture{
+      button{
+        background-color: $purple-color;
+        color: $wightcolor;
+        border-radius: 20px;
+        font-size: 12px;
+      }
+    }
+    @media (max-width:950px) {
+      &{
+        flex-direction: column;
+        .depart-content{
+          width: 100%;
+        }
+      }
+    }
+  }
+  }
+  .add-section{
+    .btn{
+      background-color: $purple-color;
+      color: $wightcolor;
+      border-radius: 20px;
+      font-size: 12px;
+    }
+  }
+}

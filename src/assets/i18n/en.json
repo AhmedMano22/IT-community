@@ -73,10 +73,37 @@
   "CONTENT_CREATION":"Content creation",
   "PRICING":"pricing",
   "WELECME":"Welcome/congratulate subscribers",
-  "PUBLISING":"publishing"
-
-
-
+  "PUBLISING":"publishing",
+  "CHOOSE_CURRENCY_PRICE":"Choose the currency and price that you find appropriate for this course",
+  "CHOOSE_CURRENCY_DESC":"Choosing the appropriate currency and price for a course depends on several factors such as the quality of the content, the length of the course, the demand for the course topic, and the level of experience it offers. The target market and purchasing power of potential students in that market must also be considered.It is also important to consider offering special offers or discounts for new students or early purchases to encourage more registrations.",
+  "CURRENCY":"Currency",
+  "CHOOSE_CURRENCY":"Select a currency",
+  "CURRENCY1":"USD",
+  "CURRENCY2":"EUR",
+  "CURRENCY3":"JPY",
+  "PRICE":"Price",
+  "ENTER_PRICE":"Enter the price",
+  "DEPART":"Section",
+  "ADD_SECTION_TITLE":"Add section title here",
+  "LECTURE":"Lecture",
+  "ADD_LECTURE_TITLE":"Add the lecture title here",
+  "ADD_CONTENT":"+ Add video/content",
+  "ADD_LECTURE_ITEM":"+ Add a lecture/item",
+  "ADD_SECTION":"+ Add a section",
+  "GUIDLINES":"Guidelines for creating course content",
+  "GUIDLINES_DESC":"Start building your course by creating sections, lectures and practical activities (quizzes, programming exercises and assignments).",
+  "RATE_NUMBER":"55 reviews",
+  "RATE":"4.6",
+  "PERSON_NAME":"Ahmed Youssef",
+  "MOUNY_AMOUNT":"400 Egyptian pounds",
+  "COURSE_NAME":"JavaScript Cource",
+  "COURSE_INFO":"JavaScript is a programming language that was originally developed by Netscape as a way to add interactive features to web pages.",
+  "DETAILS_ABOUT_COURSE":"Course Details",
+  "SUBSCRIBER_COUNT":"144 subscribers",
+  "SORT_BY":"sort by",
+  "HIEGH_RATED":"Highest rated",
+  "LOW_RATED":"Lowest rated",
+  "SEARCH_HERE":"Search here ..."
 
 
 

@@ -2,7 +2,6 @@
   <div class="container-fluid nav-container">
   <!-- Logo  -->
   <a class="navbar-brand m-0" routerLink="">
-    <!-- <img src="assets/images/home/nav-logo.svg" class="align-text-center" alt="Logo-Image" /> -->
     <img src="assets/images/auth/auth-logo.png" loading="lazy" class="align-text-center" alt="Logo-Image">
     <span class="nav-title">{{"IT" |translate}}</span>
   </a>
@@ -12,13 +11,13 @@
     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
       <ul class="navbar-nav  mb-2 mb-lg-0">
         <li class="nav-item mx-2">
-          <a class="nav-link active" routerLinkActive="active" aria-current="page" href="#">{{"CATEGORIES" | translate}}</a>
+          <a class="nav-link " routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" [routerLink]="['/categories']">{{"CATEGORIES" | translate}}</a>
         </li>
         <li class="nav-item mx-2">
-          <a class="nav-link" routerLinkActive="active" href="#">{{"COURCES" | translate}}</a>
+          <a class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" [routerLink]="['/Courses']">{{"COURCES" | translate}}</a>
         </li>
         <li class="nav-item mx-2">
-          <a class="nav-link" routerLinkActive="active" [routerLink]="['', 'Teacher']">{{"TEACHER" | translate}}</a>
+          <a class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" [routerLink]="['', 'Teacher']">{{"TEACHER" | translate}}</a>
         </li>
 
         <li class="nav-item mx-2 switch-item">
@@ -41,7 +40,7 @@
             </ul>
           </div>
         </li>
-        <li class="nav-item" >
+        <li class="nav-item" *ngIf="showAuthButtons">
           <div class="auth-btns">
             <button type="button" class="btn px-4  rounded-5  login" [routerLink]="['', 'auth', 'Login']"
             [ngClass]="{ 'active': isLoginActive }" (click)="toggleActiveButton('login')">
@@ -53,7 +52,7 @@
             </button>
           </div>
         </li>
-        <li  class="nav-item" *ngIf="islogin">
+        <li  class="nav-item" *ngIf="showUserProfile">
           <app-user-profile></app-user-profile>
         </li>
       </ul>
