@@ -16,8 +16,7 @@ import { FileUploadModule } from 'primeng/fileupload';
 import { MaterialModule } from 'src/app/material/material/material.module';
 
 import {ReactiveFormsModule } from '@angular/forms';
-import { CourseDetailsComponent } from './components/course-details/course-details.component'; // import FormsModule
- // Import the NgxRatingModule
+
 
 
 
@@ -31,7 +30,6 @@ import { CourseDetailsComponent } from './components/course-details/course-detai
     PricingComponent,
     WelcomeComponent,
     PublishComponent,
-    CourseDetailsComponent,
 
   ],
   imports: [

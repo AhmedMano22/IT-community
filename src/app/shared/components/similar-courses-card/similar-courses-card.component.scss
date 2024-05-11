@@ -4,6 +4,8 @@
     padding: 15px;
     display: flex;
     gap: 10px;
+
+
     .content{
       h1{
         color: #0A033C;
@@ -47,6 +49,21 @@
           }
 
         }
+      }
+    }
+    @media (max-width:500px) {
+      &{
+       align-items: center;
+       .img-part {
+        img{
+          width: 120px;
+        }
+      }
+      .content{
+        h1{
+          font-size: 15px;
+        }
+      }
       }
     }
   }

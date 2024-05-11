@@ -73,14 +73,7 @@
             [(ngModel)]="selectedComponent"
           />{{ "PUBLISING" | translate }}</label
         >
-        <label
-          ><input
-            type="radio"
-            name="component"
-            value="details"
-            [(ngModel)]="selectedComponent"
-          />course details - testing</label
-        >
+
       </div>
     </div>
 
@@ -98,7 +91,7 @@
       <pricing *ngIf="selectedComponent === 'pricing'"></pricing>
       <welcome *ngIf="selectedComponent === 'welcome'"></welcome>
       <publish *ngIf="selectedComponent === 'publish'"></publish>
-      <course-details *ngIf="selectedComponent === 'details'"></course-details>
+
     </div>
   </div>
 </div>
