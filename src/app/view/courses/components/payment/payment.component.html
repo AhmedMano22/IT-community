@@ -1,0 +1,120 @@
+
+<ng-container *ngIf="secondStep">
+  <div class="dash-header p-5 p-lg-5 pb-lg-3">
+
+    <p class="description">{{"CHOOSE_PAYMENT" |translate}}</p>
+  </div>
+  <div class="row p-0 m-0 flex-column align-items-center">
+
+    <div class="d-flex pay-ways mt-63 justify-content-center">
+
+      <div class="pay-select">
+        <div class="d-flex gap-2 mb-3 justify-content-center">
+          <label [class.active]="active1" for="mastercard">{{"CREDIT_CARD" |translate}}</label>
+        </div>
+        <label for="mastercard" (click)="case1()" [class.active]="active1" class="card border">
+          <img width="54" height="54" src="assets/images/payment/mastercard.png" alt="">
+        </label>
+      </div>
+      <div class="pay-select">
+        <div class="d-flex gap-2 mb-3 justify-content-center">
+          <label [class.active]="active2" for="wallet">{{"WALLET" |translate}}</label>
+        </div>
+        <label for="wallet" (click)="case2()" [class.active]="active2" class="card border">
+          <img width="41px" height="37px" src="assets/images/payment/wallet-2.png" alt="">
+        </label>
+      </div>
+      <div class="pay-select">
+        <div class="d-flex gap-2 mb-3 justify-content-center">
+          <label [class.active]="active3" for="tamara">{{"TAMARAA" |translate}}</label>
+        </div>
+        <label for="tamara" (click)="case3()" [class.active]="active3" class="card border">
+          <img width="64" height="29" src="assets/images/payment/tamara.png" alt="">
+        </label>
+      </div>
+    </div>
+    <div class="pay-form visa-form" *ngIf="active1">
+      <form [formGroup]="creditForm" (ngSubmit)="creditSubmit()">
+        <div>
+          <label>{{"NAME_ON_CARD" |translate}}</label>
+          <input [class.invalid]="creditForm.get('name')?.invalid && creditSubmitted" formControlName="name" class="form-control" type="text" />
+          <div *ngIf="creditForm.get('name')?.invalid && creditSubmitted" class="error">{{"WRITE_NAME" |translate}}</div>
+        </div>
+        <div class="mt-32">
+          <label>{{"CART_NUMBER" |translate}}</label>
+          <input formControlName="creditNumber" [class.invalid]="creditForm.get('creditNumber')?.invalid && creditSubmitted" class="form-control" type="text" />
+          <div *ngIf="creditForm.get('creditNumber')?.invalid && creditSubmitted" class="error">
+            {{"WRITE_CARD" |translate}}
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="mt-32">
+              <label>{{"END_DATE" |translate}}</label>
+              <input class="form-control" type="date" [class.invalid]="creditForm.get('endDate')?.invalid && creditSubmitted" formControlName="endDate" class="form-control" placeholder="MM/YY">
+              <!-- <input [class.invalid]="creditForm.get('endDate')?.invalid && creditSubmitted" formControlName="endDate" class="form-control" placeholder="MM/YY" type="text" /> -->
+              <div *ngIf="creditForm.get('endDate')?.invalid && creditSubmitted" class="error">
+                {{"WRITE_END_DATE" |translate}}
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="mt-32">
+              <label> {{"SECURITY_CODE" |translate}}</label>
+              <input [class.invalid]="creditForm.get('cvv')?.invalid && creditSubmitted" formControlName="cvv" class="form-control" type="text" />
+              <div *ngIf="creditForm.get('cvv')?.invalid && creditSubmitted" class="error">  {{"WRITE_SECURITY_CODE" |translate}} </div>
+            </div>
+          </div>
+        </div>
+        <div class="mx-auto w-100 mt-5 visa-button d-flex justify-content-center">
+          <button class="btn-1 w-100" type="submit">{{"PAY" |translate}}</button>
+        </div>
+      </form>
+    </div>
+    <div class="pay-form cash-form" *ngIf="active2">
+      <div class="cash-header d-flex align-items-center gap-2 mb-3">
+        <img width="29" height="29" src="assets/images/payment/wallet.png" alt="">
+        <p class="cash-title m-0">{{"CURRENT_PALANCE" |translate}}</p>
+        <span class="real-cash">{{"DOLLARPALANCE" |translate}}</span>
+      </div>
+      <form [formGroup]="walletForm">
+        <div>
+          <label>{{"AMOUNT_WILL_PAY" |translate}}</label>
+          <input formControlName="amount" [class.invalid]="walletForm.get('amount')?.invalid && walletSubmitted" class="form-control" type="number" />
+          <div *ngIf="walletForm.get('amount')?.invalid && walletSubmitted" class="error">
+          {{"WRITE_AMOUNT_YOU_PAY" |translate}}
+          </div>
+        </div>
+        <div class="mx-auto w-100 mt-5 visa-button d-flex justify-content-center">
+          <button class="btn-1 w-100" (click)="walletSubmit()">{{"PAY" |translate}} </button>
+        </div>
+      </form>
+    </div>
+    <div class="pay-form cash-form" *ngIf="active3">
+      <div class="cash-header d-flex align-items-center gap-2 mb-3">
+        <img width="29" height="29" src="assets/images/payment/wallet.png" alt="">
+        <p class="cash-title m-0">{{"CURRENT_PALANCE" |translate}}</p>
+        <span class="real-cash">{{"DOLLARPALANCE" |translate}}</span>
+      </div>
+      <form [formGroup]="tamaraForm">
+        <div>
+          <label>{{"TAMARA_PAYMENT" |translate}}</label>
+          <input [class.invalid]="tamaraForm.get('amount')?.invalid && tamaraSubmitted" formControlName="amount" class="form-control" type="number" />
+          <div *ngIf="tamaraForm.get('amount')?.invalid && tamaraSubmitted" class="error"> {{"WRITE_AMOUNT_YOU_PAY" |translate}}</div>
+        </div>
+        <div class="mx-auto w-100 mt-5 visa-button d-flex justify-content-center">
+          <button class="btn-1 w-100" (click)="tamaraSubmit()">{{"PAY" |translate}}</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</ng-container>
+
+<ng-container *ngIf="thirdStep">
+
+  <div class="d-flex done-section align-items-center justify-content-center flex-column" style="height: 80vh;">
+    <img width="87" height="87" src="assets/images/payment/done.png" alt="">
+    <h3 class="done-title">{{"PAYMENT_SUCESS" |translate}}</h3>
+
+  </div>
+</ng-container>

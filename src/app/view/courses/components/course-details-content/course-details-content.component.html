@@ -52,8 +52,13 @@
         </div>
         <!-- Payment Button and Add to cart Button -->
         <div class="payment-buttons">
-          <button class="btn payment-btn w-100 mt-3">{{"PAY_NOW" | translate}}</button>
-          <button class="btn add-cart-btn w-100 mt-3">{{"ADD_TO_CART" | translate}}</button>
+          <button class="btn payment-btn w-100 mt-3" [routerLink]="['/Courses/payment']">{{"PAY_NOW" | translate}}</button>
+          <!-- <button class="btn add-cart-btn w-100 mt-3"  [routerLink]="['/Courses/cart']">
+            {{"ADD_TO_CART" | translate}}
+          </button> -->
+          <button class="btn add-cart-btn w-100 mt-3" (click)="addtocart(course)">
+            {{"ADD_TO_CART" | translate}}
+          </button>
         </div>
 
       </div>

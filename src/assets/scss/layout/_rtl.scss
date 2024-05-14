@@ -220,13 +220,40 @@ html[dir="rtl"] {
     -o-transition: all .2s ease-in-out;
     background-color: #F8F2FF;
 
+      @media (max-width:767px) {
+        &{
+          top:-30px !important
+        }
+      }
+
+
+
     .bx{
       padding: 15px;
       color: $light-purple-color;
       font-size: 25px;
-    }
 
+    }
+    @media (min-width:768px) and (max-width:991px) {
+      &{
+        top: -5px;
+        .bx{
+          padding: 10px;
+        }
+
+      }
+    }
   }
 }
+
+ /* cart  page in  cources module */
+.apply-btn{
+  margin-right:  1rem;
+  margin-left: 0;
 }
 
+
+
+
+
+}

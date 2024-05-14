@@ -9,7 +9,7 @@
     .content{
       h1{
         color: #0A033C;
-        font-size: 20px;
+        font-size: 14px;
         margin-bottom: 5px;
       }
       .rating{
@@ -41,11 +41,25 @@
           -ms-transition: all .2s ease-in-out;
           -o-transition: all .2s ease-in-out;
           background-color: #F8F2FF;
-
+          @media (max-width:767px) {
+            &{
+              top:-30px !important
+            }
+          }
           .bx{
             padding: 15px;
             color: $light-purple-color;
             font-size: 25px;
+
+          }
+          @media (min-width:768px) and (max-width:991px) {
+            &{
+              top: -5px;
+              .bx{
+                padding: 10px;
+              }
+
+            }
           }
 
         }

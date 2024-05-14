@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { UserProfile } from 'src/app/core/interfaces/user';
+import { CartService } from 'src/app/core/services/cart.service';
 
 @Component({
   selector: 'app-user-profile',
@@ -42,5 +43,14 @@ export class UserProfileComponent {
     lastName: 'Saeed',
     image: "assets/images/default.jpg"
   };
+public totalItems = 0
+  constructor(private cartSer:CartService) {
+
+  }
+  ngOnInit() {
+    this.cartSer.getproduct().subscribe((res:any)=>{
+      this.totalItems = res.length
+    })
+  }
 
 }

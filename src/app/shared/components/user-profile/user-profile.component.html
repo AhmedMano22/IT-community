@@ -1,4 +1,12 @@
-<div class="d-flex  align-items-center user-profile " style=" gap: 10px;">
+<div class="d-flex  align-items-center user-profile " style=" gap: 30px;">
+  <div class="d-flex favorite position-relative">
+    <span class="favorite-count">0</span>
+    <i class='bx bx-heart'></i>
+  </div>
+  <div class="d-flex cart position-relative" [routerLink]="['/Courses/cart']">
+    <span class="cart-count">{{totalItems}}</span>
+    <i class='bx bxs-cart'></i>
+  </div>
   <div class="notifications">
     <div class="btn-group">
       <div class="d-flex "  type="button" data-bs-toggle="dropdown" aria-expanded="false">

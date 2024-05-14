@@ -1,0 +1,253 @@
+
+$pay-primary: #15AF97;
+$pay-primary-2: #25788E;
+$pay-primary-rgba: 21,
+    175,
+    151,
+    0.25;
+$pay-primary-linear: 215.09deg,
+    #15AF97 14.58%,
+    #71E7D5 100.18%;
+$pay-primary-linear-2: (
+
+
+    9.95deg,
+    #15AF97 5.83%,
+    #FFFFFF 147.78%),
+    #F2F2F7;
+
+$pay-secondary: #22577A;
+$pay-secondary-2: #0166C0;
+$pay-success: #3DCC79;
+$pay-danger: #FB1B1C;
+$pay-black: #000000;
+$pay-overlay: 0,
+
+    0,
+    0,
+    0.7;
+$white: #fff;
+
+$pay-gray: #767676;
+$pay-gray-2: #777777;
+$pay-gray-3: #E6E6EF;
+$pay-gray-4: #F2F2F7;
+$pay-gray-5: #DCDCEA;
+
+$width: 152px;
+$Onewidth: 145px;
+/* Rectangle 3 */
+
+.btn-1 {
+    padding: 10px 20px;
+    background: #15af97;
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+    transition: all 0.5s;
+    border-bottom: 1px solid #15af97;
+}
+
+.btn-1:hover {
+    padding: 10px 20px;
+    background: #fff;
+    color: #15af97;
+    text-decoration: none;
+}
+
+.btn-2 {
+    padding: 10px 20px;
+    background: #22577a;
+    border-radius: 30px;
+    transition: all 0.5s;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #22577a;
+}
+
+
+
+
+
+/* end excel order file */
+
+
+
+/* stepper ends */
+.dash-header {
+    .title {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29px;
+        letter-spacing: 0em;
+        color: #000;
+    }
+
+    .description {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0em;
+        color: #767676;
+    }
+}
+
+
+
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin: 5px 0 0 !important;
+}
+
+.invalid {
+    border: 2px red solid !important;
+}
+
+/* Step 3 */
+.pay-ways {
+    &.mt-63 {
+        margin-top: 63px;
+    }
+
+    margin-bottom: 48px;
+
+    .pay-select {
+
+        margin-inline: 10px;
+
+        label {
+            cursor: pointer;
+
+            &.active {
+
+                color: $pay-primary;
+
+            }
+        }
+
+        .card {
+            height: 80px;
+            width: 127px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &.active {
+
+                border-color: $pay-primary !important;
+
+            }
+        }
+    }
+}
+@media (max-width:500px) {
+    .pay-ways {
+
+        .pay-select {
+            .card {
+                width: 100px;
+            }
+        }
+    }
+}
+
+.pay-form {
+    label {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19px;
+        letter-spacing: 0em;
+        color: #000;
+        margin-bottom: 11px;
+    }
+
+    input {
+        background: #f2f2f7;
+        border: 1px solid #e6e6ef;
+        border-radius: 10px;
+    }
+
+    .mt-32 {
+        margin-top: 32px;
+    }
+
+    .visa-button {
+        .btn-1 {
+            height: 56px;
+            border-radius: 30px;
+            border: none;
+        }
+    }
+
+    &.visa-form {
+        min-height: 460px;
+        width: 640px;
+        max-width: 95%;
+        border-radius: 30px;
+        border: 1px solid rgba(119, 119, 119, 0.2);
+        padding: 32px 125px 18px;
+        margin-bottom: 35px;
+
+        @media (max-width: 767px) {
+            padding: 32px 18px 18px;
+        }
+    }
+
+    &.cash-form {
+        width: 640px;
+        max-width: 100%;
+        border-radius: 30px;
+        border: 1px solid rgba(119, 119, 119, 0.2);
+        padding: 32px 125px 18px;
+        margin-bottom: 35px;
+        @media (max-width: 767px) {
+            padding: 32px 18px 18px;
+        }
+
+        .cash-header {
+            .cash-title {
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 19px;
+                color: #000;
+            }
+
+            .real-cash {
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 19px;
+
+                color: $pay-primary;
+
+            }
+        }
+    }
+}
+
+.done-section {
+    .done-title {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 12px;
+        letter-spacing: 0.5px;
+        text-align: center;
+        margin: 35px 0 79px;
+
+        color: $pay-primary;
+
+    }
+
+    .btn-1 {
+        border: none;
+        height: 56px;
+        width: 200px;
+        border-radius: 30px;
+    }
+
+}
+
+
+

@@ -1,0 +1,146 @@
+
+
+ <section  style="background-color: #eee;">
+  <div class="container h-100 py-5" style="min-height: 100vh;">
+    <div class=" mb-4">
+      <h1 class="fw-normal mb-0 text-black text-center">{{"SHOPPING_CART" |translate}}</h1>
+    </div>
+    <div class="row d-flex justify-content-center align-items-center h-100">
+
+      <div class="col-12">
+
+
+          <ng-container *ngIf="courses.length > 0">
+            <div class="card rounded-3 mb-4" *ngFor="let course of courses">
+              <div class="card-body p-4">
+                <div class="row d-flex justify-content-between align-items-center">
+                  <div class="col-md-2 col-lg-2 col-xl-2 img-parent">
+                    <img
+                      [src]="course.image"
+                      class="img-fluid rounded-3" alt="Cotton T-shirt">
+                  </div>
+                  <div class="col-md-3 col-lg-3 col-xl-3">
+                    <p class="lead fw-normal mb-2">{{course.CourseNmae}}</p>
+                  </div>
+
+                  <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                    <h3 class="mb-0">${{course.price}}</h3>
+                  </div>
+                  <div class="col-md-1 col-lg-1 col-xl-1 mt-2 " style="text-align: start;">
+                    <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ng-container>
+            <ng-container *ngIf="courses.length == 0">
+              <div class="d-flex justify-content-center align-items-center" style="min-height: 450px;">
+                <p class="text-center">لا توجد كورسات في الكارت حاليا</p>
+              </div>
+            </ng-container>
+
+
+        <!-- <div class="card rounded-3 mb-4">
+          <div class="card-body p-4">
+            <div class="row d-flex justify-content-between align-items-center">
+              <div class="col-md-2 col-lg-2 col-xl-2 img-parent">
+                <img
+                  src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img1.webp"
+                  class="img-fluid rounded-3" alt="Cotton T-shirt">
+              </div>
+              <div class="col-md-3 col-lg-3 col-xl-3">
+                <p class="lead fw-normal mb-2">{{"MATH" |translate}}</p>
+              </div>
+
+              <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                <h3 class="mb-0">$499.00</h3>
+              </div>
+              <div class="col-md-1 col-lg-1 col-xl-1 mt-2 " style="text-align: start;">
+                <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card rounded-3 mb-4">
+          <div class="card-body p-4">
+            <div class="row d-flex justify-content-between align-items-center">
+              <div class="col-md-2 col-lg-2 col-xl-2 img-parent">
+                <img
+                  src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img1.webp"
+                  class="img-fluid rounded-3" alt="Cotton T-shirt">
+              </div>
+              <div class="col-md-3 col-lg-3 col-xl-3">
+                <p class="lead fw-normal mb-2">{{"MATH" |translate}}</p>
+              </div>
+
+              <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                <h3 class="mb-0">$499.00</h3>
+              </div>
+              <div class="col-md-1 col-lg-1 col-xl-1 mt-2 " style="text-align: start;">
+                <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card rounded-3 mb-4">
+          <div class="card-body p-4">
+            <div class="row d-flex justify-content-between align-items-center">
+              <div class="col-md-2 col-lg-2 col-xl-2 img-parent">
+                <img
+                  src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img1.webp"
+                  class="img-fluid rounded-3" alt="Cotton T-shirt">
+              </div>
+              <div class="col-md-3 col-lg-3 col-xl-3">
+                <p class="lead fw-normal mb-2">{{"MATH" |translate}}</p>
+              </div>
+
+              <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                <h3 class="mb-0">$499.00</h3>
+              </div>
+              <div class="col-md-1 col-lg-1 col-xl-1 mt-2 " style="text-align: start;">
+                <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+        <div class="card mb-4" *ngIf="courses.length > 0">
+          <div class="card-body p-4 d-flex flex-row">
+            <mat-form-field appearance="outline" class="w-100" >
+              <mat-label>{{"DISCOUNT_CODE" |translate}}</mat-label>
+              <input matInput [placeholder]="'CODE' |translate">
+            </mat-form-field>
+            <button  type="button"  class="btn btn-outline-warning btn-lg apply-btn" style="height:56px;
+            font-size: 17px;
+            width: 100px;">{{"APPLY" |translate}}</button>
+          </div>
+        </div>
+
+        <div class="card" *ngIf="courses.length > 0">
+          <div class="card-body">
+            <dl class="dlist-align mb-3">
+              <dt>{{"TOTAL_PRICE" |translate}}</dt>
+              <dd class="text-right " style="margin: 0 10px;">${{garndtotal}}</dd>
+          </dl>
+          <dl class="dlist-align mb-3">
+              <dt>{{"DISCOUNT" |translate}}</dt>
+              <dd class="text-right text-danger " style="margin: 0 10px;">- $10.00</dd>
+          </dl>
+          <dl class="dlist-align mb-3">
+              <dt> {{"TOTAL" |translate}}</dt>
+              <dd class="text-right text-dark b " style="margin: 0 10px;"><strong>${{totalafterdiscount}}</strong></dd>
+          </dl>
+            <button  type="button"  class="btn btn-warning btn-block btn-lg w-100"  [routerLink]="['/Courses/payment']">
+            {{"GO_TO_PAY" |translate}}
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+

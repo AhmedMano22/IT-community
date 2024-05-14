@@ -9,7 +9,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-      <ul class="navbar-nav  mb-2 mb-lg-0">
+      <ul class="navbar-nav  mb-2 mb-lg-0" style="padding-inline-start: 45px;">
         <li class="nav-item mx-2">
           <a class="nav-link " routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" [routerLink]="['/categories']">{{"CATEGORIES" | translate}}</a>
         </li>
@@ -52,11 +52,15 @@
             </button>
           </div>
         </li>
+        <!-- <li  class="nav-item" *ngIf="showUserProfile">
+          <app-user-profile></app-user-profile>
+        </li> -->
+      </ul>
+      <ul class="navbar-nav  mb-2 mb-lg-0" style="padding-inline-start: 45px;">
         <li  class="nav-item" *ngIf="showUserProfile">
           <app-user-profile></app-user-profile>
         </li>
       </ul>
-
     </div>
   </div>
 </nav>

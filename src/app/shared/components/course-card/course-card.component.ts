@@ -8,7 +8,7 @@ import { Component, Input } from '@angular/core';
 export class CourseCardComponent {
   @Input() Course: any;
   isBookmarked = false;
-
+  rate = 5
   toggleBookmark() {
     this.isBookmarked = !this.isBookmarked;
   }

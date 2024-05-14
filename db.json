@@ -1,0 +1,67 @@
+{
+  "posts": [
+    { "id": "1", "title": "a title", "views": 100 },
+    { "id": "2", "title": "another title", "views": 200 }
+  ],
+  "products": [
+    {
+        "id": "1",
+        "tutor": "أحمد يوسف",
+        "rateCount": "٥٥ ",
+        "rate":"٤.٦",
+        "price":400,
+        "CourseNmae":"جافاسكريبت",
+        "description":"جافاسكريبت (JavaScript) هي لغة برمجة تم تطويرها في الأصل من قبل نيتسكيب كوسيلة لإضافة ميزات تفاعلية لصفحات الويب",
+        "subscriber":"١٤٤",
+        "image":"assets/images/tutors/tutor1.png"
+    },
+    {
+      "id": "2",
+      "tutor": "أحمد يوسف",
+      "rateCount": "٥٥ ",
+      "rate":"٤.٦",
+      "price":400,
+      "CourseNmae":"رياضيات",
+      "description":"جافاسكريبت (JavaScript) هي لغة برمجة تم تطويرها في الأصل من قبل نيتسكيب كوسيلة لإضافة ميزات تفاعلية لصفحات الويب",
+      "subscriber":"١٤٤",
+      "image":"assets/images/tutors/tutor2.png"
+  },
+  {
+    "id": "3",
+    "tutor": "أحمد يوسف",
+    "rateCount": "٥٥ ",
+    "rate":"٤.٦",
+    "price":400,
+    "CourseNmae":"احياء",
+    "description":"جافاسكريبت (JavaScript) هي لغة برمجة تم تطويرها في الأصل من قبل نيتسكيب كوسيلة لإضافة ميزات تفاعلية لصفحات الويب",
+    "subscriber":"١٤٤",
+    "image":"assets/images/tutors/tutor3.png"
+}
+,
+  {
+    "id": "4",
+    "tutor": "أحمد يوسف",
+    "rateCount": "٥٥ ",
+    "rate":"٤.٦",
+    "price":400,
+    "CourseNmae":"كيمياء",
+    "description":"جافاسكريبت (JavaScript) هي لغة برمجة تم تطويرها في الأصل من قبل نيتسكيب كوسيلة لإضافة ميزات تفاعلية لصفحات الويب",
+    "subscriber":"١٤٤",
+    "image":"assets/images/tutors/tutor4.png"
+}
+,
+  {
+    "id": "5",
+    "tutor": "أحمد يوسف",
+    "rateCount": "٥٥ ",
+    "rate":"٤.٦",
+    "price":400,
+    "CourseNmae":"فيزياء",
+    "description":"جافاسكريبت (JavaScript) هي لغة برمجة تم تطويرها في الأصل من قبل نيتسكيب كوسيلة لإضافة ميزات تفاعلية لصفحات الويب",
+    "subscriber":"١٤٤",
+    "image":"assets/images/tutors/tutor5.png"
+}
+
+  ]
+
+}

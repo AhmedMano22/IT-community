@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { CartService } from 'src/app/core/services/cart.service';
 
 @Component({
   selector: 'similar-courses-card',
@@ -9,6 +10,8 @@ export class SimilarCoursesCardComponent {
   @Input() Course: any;
   isBookmarked = false;
   rate = 5;
+
+
   toggleBookmark() {
     this.isBookmarked = !this.isBookmarked;
   }

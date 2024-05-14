@@ -9,6 +9,46 @@
 
 .user-profile{
   justify-content: end;
+  .favorite{
+    cursor: pointer;
+    .favorite-count{
+      position: absolute;
+      background-color:$tomato-color ;
+      width: 19px;
+      height: 19px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      top: -16px;
+      left: 20px;
+      font-size: 11px;
+    }
+    .bx-heart{
+      font-size: 30px;
+      color: black;
+    }
+  }
+  .cart{
+    cursor: pointer;
+    .cart-count{
+      position: absolute;
+      background-color:$tomato-color ;
+      width: 19px;
+      height: 19px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      top: -15px;
+      left: 20px;
+      font-size: 11px;
+    }
+    .bxs-cart{
+      font-size: 30px;
+      color: black;
+    }
+  }
 
   .user-name{
     font-size: 17px;

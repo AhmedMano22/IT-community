@@ -11,29 +11,36 @@
         <div class="reviews">
               <div class="rating ">
                   <div class="rate-content">
-                    <span>({{"RATE_NUMBER" |translate}})</span>
-                    <rating class="rate" [(ngModel)]="Course.rate" [max]="Course.rate"  [readonly]="true" ></rating>
-                    <span>{{"RATE" |translate}}</span>
+                    <!-- <span>({{"RATE_NUMBER" |translate}})</span> -->
+                    <span>({{Course.rateCount}} {{"RATE_TEXT" |translate}})</span>
+                    <!-- <rating class="rate" [(ngModel)]="Course.rate" [max]="Course.rate"  [readonly]="true" ></rating> -->
+                    <rating class="rate" [(ngModel)]="rate" [max]="rate"  [readonly]="true" ></rating>
+                    <!-- <span>{{"RATE" |translate}}</span> -->
+                    <span>{{Course.rate}}</span>
                   </div>
 
               </div>
               <div class="record">
-                <span class="person-name">{{"PERSON_NAME" |translate}}</span>
+                <!-- <span class="person-name">{{"PERSON_NAME" |translate}}</span> -->
+                <span class="person-name">{{Course.tutor}}</span>
               </div>
         </div>
         <div class="money-content">
-          <span class="money-amount">{{"MOUNY_AMOUNT" |translate}}</span>
+          <!-- <span class="money-amount">{{"MOUNY_AMOUNT" |translate}}</span> -->
+          <span class="money-amount">{{Course.price}} {{"MOUNY" |translate}}</span>
         </div>
         <div class="course-details mt-2">
-          <h1>{{"COURSE_NAME" |translate}}</h1>
-          <p>{{"COURSE_INFO" |translate}}</p>
+          <!-- <h1>{{"COURSE_NAME" |translate}}</h1>
+          <p>{{"COURSE_INFO" |translate}}</p> -->
+          <h1>{{Course.CourseNmae}}</h1>
+          <p>{{Course.description}}</p>
         </div>
 
-<!--  -->
         <div class=" mt-4">
           <div class="action-btns">
-                <span>{{"SUBSCRIBER_COUNT" |translate}}</span>
-              <button class="details" [routerLink]="['/Courses/details',1]">{{"DETAILS_ABOUT_COURSE" |translate}}</button>
+                <!-- <span>{{"SUBSCRIBER_COUNT" |translate}}</span> -->
+                <span>{{Course.subscriber}} {{"SUBSCRIBER" |translate}}</span>
+              <button class="details" [routerLink]="['/Courses/details',Course.id]">{{"DETAILS_ABOUT_COURSE" |translate}}</button>
           </div>
       </div>
     </div>

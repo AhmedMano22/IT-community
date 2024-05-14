@@ -176,5 +176,43 @@
   "CHOOSE_CURRENCY": "Choose currency",
   "CURRENCY1": "US Dollar ",
   "CURRENCY2": "Euro",
-  "CURRENCY3": "Japanese Yen"
+  "CURRENCY3": "Japanese Yen",
+  "CHOOSE_PAYMENT":"Choose the payment method you want to pay with",
+  "CREDIT_CARD":"Credit card",
+  "TAMARAA":"Tamara",
+  "NAME_ON_CARD":"The name on the card",
+  "WRITE_NAME":"Please write the name",
+  "WRITE_CARD":"Please write the full card number",
+  "END_DATE":"End Date",
+  "WRITE_END_DATE":"Please write the end date",
+  "SECURITY_CODE":"Security code",
+  "WRITE_SECURITY_CODE":"Please type the security code",
+  "PAY":"Confirm payment",
+  "CURRENT_PALANCE":"Your current wallet balance is",
+  "DOLLARPALANCE":"$ 2000",
+  "AMOUNT_WILL_PAY":"The amount you will pay",
+  "WRITE_AMOUNT_YOU_PAY":"Please write the amount you want to pay",
+  "TAMARA_PAYMENT":"The amount you will pay through Tamara",
+  "PAYMENT_SUCESS":"The payment was completed successfully",
+  "CART_NUMBER":"Cart Number",
+  "WALLET":"wallet",
+  "MATH":"Math",
+  "SHOPPING_CART":"Shopping Cart",
+  "DISCOUNT":"Discount :",
+  "TOTAL_PRICE":"Total price :",
+  "TOTAL":"Total :",
+  "GO_TO_PAY":"Proceed to Pay",
+  "DISCOUNT_CODE":"Discound code",
+  "CODE":"Code",
+  "APPLY":"Apply",
+  "RATE_TEXT":"rate",
+  "MOUNY":"EGP",
+  "SUBSCRIBER":"subscriber"
+
+
+
+
+
+
+
 }
