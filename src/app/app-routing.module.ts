@@ -32,6 +32,11 @@ const routes: Routes = [
       import('./view/courses/courses.module').then((m) => m.CoursesModule),
   },
   {
+    path: 'Performance',
+    loadChildren: () =>
+      import('./view/performance/performance.module').then((m) => m.PerformanceModule),
+  },
+  {
     path:"**",
     redirectTo: '',
   }

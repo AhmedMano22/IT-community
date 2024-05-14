@@ -1,0 +1,36 @@
+@import "../../../../../assets/scss/colors";
+.statistics .data {
+
+  color: #b6b5b5;
+  min-height: 300px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.statistics h2 {
+  padding-bottom: 60px;
+}
+
+.statistics .stats {
+  cursor: pointer;
+  margin-bottom: 30px;
+  transition: all 0.5s ease-in-out;
+}
+
+.statistics .stats:hover {
+  // transform: scale(1.1);
+  color: $tomato-color;
+}
+
+.statistics p {
+  font-size: 37px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.statistics span {
+  font-size: 18px;
+}
+ .active {
+  color: $tomato-color;
+}

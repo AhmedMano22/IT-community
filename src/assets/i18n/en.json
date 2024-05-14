@@ -207,7 +207,9 @@
   "APPLY":"Apply",
   "RATE_TEXT":"rate",
   "MOUNY":"EGP",
-  "SUBSCRIBER":"subscriber"
+  "SUBSCRIBER":"subscriber",
+  "USERS_SATISFIED":"Satisfied Users",
+  "COMMENTS":"Posted Comments"
 
 
 
