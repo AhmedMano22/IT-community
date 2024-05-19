@@ -215,5 +215,14 @@
   "PAYMENTDATE": "تاريخ الدفع",
   "COURSE_COUPON": "كود الدورة",
   "COURSE_PRICE": "سعر الدورة",
-  "STATUS": "الحالة"
+  "STATUS": "الحالة",
+  "INVOICES": "الفواتير",
+  "INVOICES_SUB": "سجل شراء الدورات التدريبية الخاصة بك",
+
+  "YEAR": "سنة",
+  "6MONTH": "6 شهور",
+  "MONTH": " شهر",
+  "REVIEWS": "المراجعات",
+  "MOENY": "المال",
+  "SUBSCRIBERS": "المشتركون"
 }

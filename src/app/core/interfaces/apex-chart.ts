@@ -2,6 +2,7 @@ import { ApexAxisChartSeries, ApexChart, ApexDataLabels, ApexFill, ApexLegend, A
 
 let primary_color =  "rgb(99, 98, 231)";
 let secondary_color =  "rgb(255, 197, 0)";
+let main_color = "#FF6652";
 export type ChartOptions = {
     series?: ApexAxisChartSeries;
     chart?: ApexChart;
@@ -46,6 +47,10 @@ export type ChartOptions = {
         name: "series2",
         data: [11, 32, 45, 32, 34, 52, 41],
       },
+      {
+        name: "series3",
+        data: [50, 32, 20, 12, 44, 52, 21],
+      },
     ],
 
     xaxis: {
@@ -57,5 +62,5 @@ export type ChartOptions = {
         format: "dd/MM/yy HH:mm",
       },
     },
-    colors: [primary_color, secondary_color],
+    colors: [primary_color, secondary_color,main_color],
   };
