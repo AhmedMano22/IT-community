@@ -6,6 +6,7 @@ import { PerformanceComponent } from './performance.component';
 import { MainComponent } from './components/main/main.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { NgApexchartsModule } from 'ng-apexcharts';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { NgApexchartsModule } from 'ng-apexcharts';
     CommonModule,
     NgApexchartsModule,
     PerformanceRoutingModule,
-    SharedModule
+    SharedModule,
+    FormsModule
   ]
 })
 export class PerformanceModule { }

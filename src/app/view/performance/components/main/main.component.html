@@ -3,23 +3,42 @@
   <div class="data">
     <div class="container">
       <div class="row">
-        <div class=" col-sm-6 col-xs-12">
+        <div class=" col-sm-4  col-xs-12">
           <div class="stats" [class.active]="active1" (click)="case1()">
             <i class="fa fa-users fa-3x mb-3"></i>
             <p class="mb-3">9,550</p>
-            <span>{{"USERS_SATISFIED" |translate}}</span>
+            <span>{{"SUBSCRIBERS" |translate}}</span>
           </div>
         </div>
-        <div class=" col-sm-6 col-xs-12">
+        <div class=" col-sm-4  col-xs-12">
           <div class="stats" [class.active]="active2" (click)="case2()">
-            <i class="fa fa-comments fa-3x mb-3"></i>
+            <i class="fa-solid fa-comments-dollar fa-3x mb-3"></i>
+            <p class="mb-3">4,450</p>
+            <span>{{"MOENY" |translate}}</span>
+          </div>
+        </div>
+        <div class=" col-sm-4  col-xs-12">
+          <div class="stats" [class.active]="active3" (click)="case3()">
+            <!-- <i class="fa fa-comments fa-3x mb-3"></i> -->
+            <i class="fa-solid fa-magnifying-glass-chart fa-3x mb-3"></i>
+
             <p class="mb-3">25,600</p>
-            <span>{{"COMMENTS" |translate}}</span>
+            <span>{{"REVIEWS" |translate}}</span>
           </div>
         </div>
       </div>
 
       <div class="row mt-2">
+        <div class="col-md-6 col-12">
+          <!-- Course level area -->
+            <div class="course-level">
+              <select class="form-select" [(ngModel)]="selectedLevelOption" (change)="onLevelChange()" style="height: 48px;">
+                <option *ngFor="let option of optionsCourseLevels" [value]="option.id">
+                  {{ option.label | translate }}
+                </option>
+              </select>
+            </div>
+        </div>
         <div class="col-12" *ngIf="active1">
           <div class="card-body">
             <div id="area-spaline">
@@ -37,6 +56,22 @@
           </div>
         </div>
         <div class="col-12" *ngIf="active2">
+          <div class="card-body">
+            <div id="area-spaline">
+            <apx-chart
+              [chart]="areaSpalineChart2.chart"
+              [dataLabels]="areaSpalineChart2.dataLabels"
+              [stroke]="areaSpalineChart2.stroke"
+              [series]="areaSpalineChart2.series"
+              [xaxis]="areaSpalineChart2.xaxis"
+              [colors]="areaSpalineChart2.colors"
+
+              [fill]="areaSpalineChart2.tooltip">
+              </apx-chart>
+            </div>
+          </div>
+        </div>
+        <div class="col-12" *ngIf="active3">
           <div class="card-body">
             <div id="area-spaline">
             <apx-chart
