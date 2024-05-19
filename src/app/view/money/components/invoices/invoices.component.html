@@ -1,0 +1,88 @@
+<div class="invoice">
+  <div class="container">
+    <div class="withdraw-details m-5">
+      <div class="invoice-title">
+        <h1>
+          Invoices
+          <span>Your course purchase history</span>
+        </h1>
+      </div>
+    </div>
+
+    <div class="mat-elevation-z8 table-responsive invoice-table">
+      <table mat-table [dataSource]="dataSource">
+        <!-- Course description Column -->
+        <!-- Booked Date Column -->
+        <ng-container matColumnDef="CourseName">
+          <th mat-header-cell *matHeaderCellDef class="text-center">
+            {{"COURSE_NAMEE" | translate}}
+          </th>
+          <td mat-cell *matCellDef="let element" class="text-center">
+            {{ element.CourseName }}
+          </td>
+        </ng-container>
+
+        <!-- Booked Date Column -->
+        <ng-container matColumnDef="BookedDate">
+          <th mat-header-cell *matHeaderCellDef class="text-center">{{"PAYMENTDATE" | translate}}</th>
+          <td mat-cell *matCellDef="let element" class="text-center">
+            {{ element.BookedDate }}
+          </td>
+        </ng-container>
+
+        <!-- Course Coupon Column -->
+        <ng-container matColumnDef="CourseCoupon">
+          <th
+            mat-header-cell
+            *matHeaderCellDef
+            class="text-center"
+            style="min-width: 190px"
+          >
+            {{"COURSE_COUPON" | translate}}
+          </th>
+          <td mat-cell *matCellDef="let element" class="text-center">
+            {{ element.CourseCoupon }}
+          </td>
+        </ng-container>
+
+        <!-- Price Column -->
+        <ng-container matColumnDef="Price">
+          <th mat-header-cell *matHeaderCellDef class="text-center">{{"COURSE_PRICE"| translate}}</th>
+          <td mat-cell *matCellDef="let element" class="text-center">
+            {{ element.Price }}
+          </td>
+        </ng-container>
+
+        <!-- Currency Column -->
+        <ng-container matColumnDef="Currency">
+          <th mat-header-cell *matHeaderCellDef class="text-center">
+            {{"CURRENCY" | translate}}
+          </th>
+
+          <td mat-cell *matCellDef="let element" class="text-center">
+            {{ element.Currency }}
+          </td>
+        </ng-container>
+
+        <!-- Status Column -->
+        <ng-container matColumnDef="status">
+          <th mat-header-cell *matHeaderCellDef class="text-center">{{"STATUS" | translate}}</th>
+          <td mat-cell *matCellDef="let element" class="text-center">
+            {{ element.status }}
+          </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+      </table>
+
+      <mat-paginator
+        class="py-2"
+        [pageSizeOptions]="[5, 10, 20]"
+        showFirstLastButtons
+        aria-label="Select page of periodic elements"
+      >
+      </mat-paginator>
+    </div>
+  </div>
+</div>

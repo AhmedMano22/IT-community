@@ -1,4 +1,55 @@
 {
+  "workbench.startupEditor": "none",
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontLigatures": "'calt', 'ss01', 'cv06', 'cv07'",
+  "editor.fontSize": 18,
+  // "editor.fontLigatures": true,
+  "editor.formatOnPaste": false,
+  "editor.formatOnSave": true,
+  "editor.minimap.autohide": true,
+  "editor.tabSize": 2,
+  "files.autoSave": "afterDelay",
+  "workbench.editor.highlightModifiedTabs": true,
+  "editor.linkedEditing": true,
+  "editor.autoIndent": "none",
+  "prettier.bracketSameLine": true,
+  "workbench.productIconTheme": "fluent-icons",
+  "oneDarkPro.editorTheme": "One Dark Pro Darker",
+  "workbench.preferredDarkColorTheme": "One Dark Pro Darker",
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.colorCustomizations": {
+    "tab.activeBackground": "#282c34",
+    "tab.border": "#1e2229",
+    "activityBar.background": "#1e2229",
+    "sideBar.background": "#1e2229",
+    // "tab.activeBorderTop": "#d19a66",
+    "tab.activeBorder": "#1e2229",
+    // "activityBarBadge.background": "#282c34",
+    // "statusBarItem.remoteBackground": "#1e2229",
+    "editor.background": "#1e2229",
+    "panel.border": "#1e2229",
+    "scrollbar.shadow": "#542f79",
+    "editor.lineHighlightBackground": "#424f63",
+    "editor.selectionBackground": "#424f63"
+  },
+  "editor.lineHeight": 30,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.wordWrap": "on",
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "editor.minimap.enabled": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": false,
+  "[markdown]": {
+    "files.insertFinalNewline": false
+  },
+  "oneDarkPro.vivid": true,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+  "workbench.colorTheme": "One Dark Pro Darker",
+  "editor.renderWhitespace": "all"
 }

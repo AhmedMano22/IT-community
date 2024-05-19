@@ -209,8 +209,14 @@
   "MOUNY":"EGP",
   "SUBSCRIBER":"subscriber",
   "USERS_SATISFIED":"Satisfied Users",
-  "COMMENTS":"Posted Comments"
+  "COMMENTS":"Posted Comments",
 
+
+  "COURSE_NAMEE": "Course Name",
+  "PAYMENTDATE": "Payment Date",
+  "COURSE_COUPON": "Course Coupon",
+  "COURSE_PRICE": "Course Price",
+  "STATUS": "Status"
 
 
 
