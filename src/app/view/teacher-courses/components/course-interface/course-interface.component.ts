@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class CourseInterfaceComponent {
   imgFileName = '';
   vidFileName = '';
-  noVidSelected = "COURSE_INTRO_VIDEO_NOT_SELECTED";
+  noVidSelected = 'COURSE_INTRO_VIDEO_NOT_SELECTED';
 
   constructor() {
     this.selectedCategoryOption = 'CHOOSE_COURSE_CATAGORY_PLACEHOLDER';
@@ -47,11 +47,17 @@ export class CourseInterfaceComponent {
 
   onFileImageChange(event: any) {
     const file = event.target.files[0];
-    this.imgFileName = file.name;
+    const fileName = file.name;
+    const fileExtension = fileName.slice(fileName.lastIndexOf('.'));
+    const shortFileName = fileName.slice(0, 9);
+    this.imgFileName = shortFileName + fileExtension;
   }
 
   onFileVideoChange(event: any) {
     const file = event.target.files[0];
-    this.vidFileName = file.name;
+    const fileName = file.name;
+    const fileExtension = fileName.slice(fileName.lastIndexOf('.'));
+    const shortFileName = fileName.slice(0, 9);
+    this.vidFileName = shortFileName + fileExtension;
   }
 }

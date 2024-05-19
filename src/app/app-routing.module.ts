@@ -8,8 +8,9 @@ const routes: Routes = [
     pathMatch: 'full',
   },
   {
-    path:'',
-    loadChildren:()=>import('./view/home/home.module').then(m=> m.HomeModule)
+    path: '',
+    loadChildren: () =>
+      import('./view/home/home.module').then((m) => m.HomeModule),
   },
   {
     path: 'auth',
@@ -24,7 +25,9 @@ const routes: Routes = [
   {
     path: 'My-Cources',
     loadChildren: () =>
-      import('./view/teacher-courses/teacher-courses.module').then((m) => m.TeacherCoursesModule),
+      import('./view/teacher-courses/teacher-courses.module').then(
+        (m) => m.TeacherCoursesModule
+      ),
   },
   {
     path: 'Courses',
@@ -34,17 +37,23 @@ const routes: Routes = [
   {
     path: 'Performance',
     loadChildren: () =>
-      import('./view/performance/performance.module').then((m) => m.PerformanceModule),
+      import('./view/performance/performance.module').then(
+        (m) => m.PerformanceModule
+      ),
   },
   {
-    path:"**",
+    path: 'Money',
+    loadChildren: () =>
+      import('./view/money/money.module').then((m) => m.MoneyModule),
+  },
+  {
+    path: '**',
     redirectTo: '',
-  }
-
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
