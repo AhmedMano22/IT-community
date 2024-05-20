@@ -1,4 +1,3 @@
-
 <section class="statistics text-center">
   <div class="data">
     <div class="container">
@@ -31,26 +30,21 @@
       <div class="row mt-2">
         <div class="col-md-6 col-12">
           <!-- Course level area -->
-            <div class="course-level">
-              <select class="form-select" [(ngModel)]="selectedLevelOption" (change)="onLevelChange()" style="height: 48px;">
-                <option *ngFor="let option of optionsCourseLevels" [value]="option.id">
-                  {{ option.label | translate }}
-                </option>
-              </select>
-            </div>
+          <div class="course-level">
+            <select class="form-select" [(ngModel)]="selectedLevelOption" (change)="onLevelChange()"
+              style="height: 48px;">
+              <option *ngFor="let option of optionsCourseLevels" [value]="option.id">
+                {{ option.label | translate }}
+              </option>
+            </select>
+          </div>
         </div>
         <div class="col-12" *ngIf="active1">
           <div class="card-body">
             <div id="area-spaline">
-            <apx-chart
-              [chart]="areaSpalineChart.chart"
-              [dataLabels]="areaSpalineChart.dataLabels"
-              [stroke]="areaSpalineChart.stroke"
-              [series]="areaSpalineChart.series"
-              [xaxis]="areaSpalineChart.xaxis"
-              [colors]="areaSpalineChart.colors"
-
-              [fill]="areaSpalineChart.tooltip">
+              <apx-chart [chart]="areaSpalineChart.chart" [dataLabels]="areaSpalineChart.dataLabels"
+                [stroke]="areaSpalineChart.stroke" [series]="areaSpalineChart.series" [xaxis]="areaSpalineChart.xaxis"
+                [colors]="areaSpalineChart.colors" [fill]="areaSpalineChart.tooltip">
               </apx-chart>
             </div>
           </div>
@@ -58,15 +52,10 @@
         <div class="col-12" *ngIf="active2">
           <div class="card-body">
             <div id="area-spaline">
-            <apx-chart
-              [chart]="areaSpalineChart2.chart"
-              [dataLabels]="areaSpalineChart2.dataLabels"
-              [stroke]="areaSpalineChart2.stroke"
-              [series]="areaSpalineChart2.series"
-              [xaxis]="areaSpalineChart2.xaxis"
-              [colors]="areaSpalineChart2.colors"
-
-              [fill]="areaSpalineChart2.tooltip">
+              <apx-chart [chart]="areaSpalineChart2.chart" [dataLabels]="areaSpalineChart2.dataLabels"
+                [stroke]="areaSpalineChart2.stroke" [series]="areaSpalineChart2.series"
+                [xaxis]="areaSpalineChart2.xaxis" [colors]="areaSpalineChart2.colors"
+                [fill]="areaSpalineChart2.tooltip">
               </apx-chart>
             </div>
           </div>
@@ -74,15 +63,11 @@
         <div class="col-12" *ngIf="active3">
           <div class="card-body">
             <div id="area-spaline">
-            <apx-chart
-              [chart]="areaSpalineChart2.chart"
-              [dataLabels]="areaSpalineChart2.dataLabels"
-              [stroke]="areaSpalineChart2.stroke"
-              [series]="areaSpalineChart2.series"
-              [xaxis]="areaSpalineChart2.xaxis"
-              [colors]="areaSpalineChart2.colors"
 
-              [fill]="areaSpalineChart2.tooltip">
+              <apx-chart [chart]="areaSpalineChart2.chart" [dataLabels]="areaSpalineChart2.dataLabels"
+                [stroke]="areaSpalineChart2.stroke" [series]="areaSpalineChart2.series"
+                [xaxis]="areaSpalineChart2.xaxis" [colors]="areaSpalineChart2.colors"
+                [fill]="areaSpalineChart2.tooltip">
               </apx-chart>
             </div>
           </div>
