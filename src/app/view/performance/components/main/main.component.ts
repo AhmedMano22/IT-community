@@ -109,13 +109,6 @@ export class MainComponent {
   }
 
 
-
-
-
-
-
-
-
   active1 = true;
   active2 = false;
   active3 = false;
