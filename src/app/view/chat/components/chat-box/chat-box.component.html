@@ -1,0 +1,54 @@
+    <div class="msgBox">
+      <!-- <div class="chat-info">
+        <span>{{ selectedUser.userName }}</span>
+        <div class="button back-button" (click)="back.emit()">
+          <i class="fa-solid fa-arrow-right" ></i>
+        </div>
+      </div> -->
+
+      <div class="chatMsgs col">
+        <div class="messageContainer" *ngFor="let message of messages">
+          <div class="messageInfo">
+            <img [src]="message.userImage" alt="user-img" class="user-img" />
+            <span class="text-center">{{ message.timestamp }}</span>
+          </div>
+          <div class="messageContent">
+            <p *ngIf="message.content">{{ message.content }}</p>
+            <img
+              *ngIf="message.file"
+              [src]="getUploadedImageUrl(message.file)"
+              alt="uploaded-image"
+              class="uploaded-image"
+            />
+          </div>
+        </div>
+
+      </div>
+
+      <div class="chat-input">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Type a message..."
+          [(ngModel)]="content"
+          (keydown.enter)="sendMessage(content)"
+        />
+        <input id="file-upload" type="file" class="d-none" />
+
+        <div class="upload-button">
+          <input
+            type="file"
+            class="form-control d-none"
+            accept="image/*"
+            #fileInput
+            (change)="onFileChange($event)"
+          />
+          <div class="button" (click)="fileInput.click()">
+            <i class="fa-solid fa-upload" for="file-upload"></i>
+          </div>
+        </div>
+        <div class="button" (click)="sendMessage(content)">
+          <i class="fa-solid fa-paper-plane"></i>
+        </div>
+      </div>
+    </div>

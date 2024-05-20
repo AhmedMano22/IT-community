@@ -3,6 +3,7 @@
   "editor.fontFamily": "JetBrains Mono",
   "editor.fontLigatures": "'calt', 'ss01', 'cv06', 'cv07'",
   "editor.fontSize": 13,
+
   // "editor.fontLigatures": true,
   "editor.formatOnPaste": false,
   "editor.formatOnSave": true,

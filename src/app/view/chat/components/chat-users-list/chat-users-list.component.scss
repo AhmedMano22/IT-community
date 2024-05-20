@@ -1,0 +1,75 @@
+@import "../../../../../assets/scss/colors";
+.sidebar {
+  height: 100%;
+  background-color: $whitesmoke-color;
+  border-right: $light-cream-color 1px solid;
+  overflow: scroll;
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: $light-cream-color 1px solid;
+    .chat-logo {
+      color: $purple-color;
+      font-size: 1.25rem;
+    }
+    .user-info {
+      display: flex;
+      align-items: center;
+
+      cursor: pointer;
+      img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 10px;
+      }
+      span {
+        color: $purple-color;
+        font-size: 1rem;
+      }
+    }
+  }
+  .search {
+    .searchForm {
+      padding: 10px;
+      input {
+        width: 100%;
+        border: none;
+        outline: none;
+        background-color: $light-cream-color;
+      }
+      border-bottom: $light-cream-color 1px solid;
+    }
+    .userChat {
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+      &:hover {
+        background-color: $dark-almond-color;
+      }
+      img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+      .userChatInfo {
+        padding-top: 10px;
+        span {
+          font-size: 18px;
+          font-weight: 500;
+        }
+        p {
+          font-size: 14px;
+          color: grey;
+          margin-top: 3px;
+        }
+      }
+    }
+  }
+}

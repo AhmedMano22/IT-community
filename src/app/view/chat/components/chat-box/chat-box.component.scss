@@ -1,0 +1,69 @@
+@import "../../../../../assets/scss/colors";
+.msgBox {
+ 
+  background-color: $light-cream-color;
+
+  .chatMsgs {
+    height: calc(100vh - 250px);
+    padding: 10px;
+    overflow: scroll;
+    .messageContainer {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 20px;
+      .messageInfo {
+        display: flex;
+        flex-direction: column;
+        font-weight: 300;
+        color: grey;
+        img {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+      }
+      .messageContent {
+        max-width: 80%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        p {
+          background-color: $light-purple-color;
+          padding: 10px;
+          border-radius: 0 10px 10px 10px;
+          color: $light-cream-color;
+          max-width: max-content;
+        }
+        img {
+          width: 50%;
+          border: $light-purple-color 5px solid;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+  .chat-input {
+    height: 50px;
+    background-color: $whitesmoke-color;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    input {
+      width: 100%;
+      border: none;
+      outline: none;
+      background-color: $light-cream-color;
+    }
+    .button {
+      cursor: pointer;
+      padding: 10px;
+      border-radius: 10px;
+      &:hover {
+        background-color: $dark-almond-color;
+      }
+    }
+  }
+}
