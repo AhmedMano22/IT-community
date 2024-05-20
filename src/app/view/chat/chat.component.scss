@@ -1,0 +1,72 @@
+@import "../../../assets/scss/colors";
+
+.container.chat-page {
+  margin-top: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: calc(100% - 75px);
+
+  .row.chat-page-container {
+    border: $light-cream-color 1px solid;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1200px;
+  }
+
+  .user-chat-list-container,
+  .chat-box-container {
+    padding: 0;
+  }
+  .chat-box-container {
+    .chat-box-header {
+      background-color: $whitesmoke-color;
+      padding: 10px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .chat-box-title {
+        color: $dark-color;
+        font-size: 1rem;
+      }
+      .back-button {
+        display: none; // Hide back button by default
+
+        @media (max-width: 767px) {
+          display: flex; // Show back button on small screens
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .user-chat-list-container,
+  .chat-box-container {
+    width: 100%;
+  }
+
+  .user-chat-list-container {
+    height: calc(100vh - 150px);
+  }
+  .user-chat-list-container {
+    margin-bottom: 20px;
+  }
+
+  // Display user chat list on small screens
+  .show-user-list {
+    display: block !important;
+  }
+
+  // Display chat box on small screens
+  .show-chat-box {
+    display: block !important;
+  }
+
+  .hide {
+    display: none !important;
+  }
+}

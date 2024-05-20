@@ -47,6 +47,12 @@ const routes: Routes = [
       import('./view/money/money.module').then((m) => m.MoneyModule),
   },
   {
+    path: 'chat',
+    loadChildren: () =>
+      import('./view/chat/chat.module').then((m) => m.ChatModule),
+  },
+
+  {
     path: '**',
     redirectTo: '',
   },

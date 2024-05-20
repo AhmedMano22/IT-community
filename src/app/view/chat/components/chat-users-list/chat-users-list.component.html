@@ -1,0 +1,24 @@
+<div class="sidebar" id="sidebarToggler">
+  <nav class="navbar">
+    <a class="navbar-brand chat-logo">Messages</a>
+    <div class="user-info">
+      <img
+        src="../../../../../assets/images/user/avatar-01.png"
+        alt="userImg"
+      />
+      <span>Deeby</span>
+    </div>
+  </nav>
+  <div class="search">
+    <div class="searchForm">
+      <input type="text" class="form-control" placeholder="Search here" />
+    </div>
+    <div class="userChat" *ngFor="let user of users" (click)="selectUser(user)">
+      <img [src]="user.userImage" alt="" />
+      <div class="userChatInfo">
+        <span>{{ user.userName }}</span>
+        <p>{{ user.lastMsg }}</p>
+      </div>
+    </div>
+  </div>
+</div>

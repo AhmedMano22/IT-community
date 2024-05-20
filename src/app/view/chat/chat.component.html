@@ -1,0 +1,42 @@
+
+<app-navbar></app-navbar>
+<div class="container chat-page" style="padding-top: 70px">
+  <div class="row chat-page-container">
+
+    <!-- User chat list container -->
+    <div
+      class="col-md-4 col-12 user-chat-list-container"
+      [ngClass]="{
+        hide: isChatBoxVisibleOnSmallScreen,
+        'show-user-list': !isChatBoxVisibleOnSmallScreen
+      }"
+    >
+      <app-chat-users-list
+        (userSelected)="openChat($event)"
+      ></app-chat-users-list>
+    </div>
+
+    <!-- Chat box container -->
+    <div
+      class="col-md-8 col-12 chat-box-container"
+      [ngClass]="{
+        hide: !isChatBoxVisibleOnSmallScreen,
+        'show-chat-box': isChatBoxVisibleOnSmallScreen
+      }"
+    >
+      <div
+        class="chat-box-header d-flex align-items-center justify-content-between"
+      >
+        <div class="chat-box-title">{{ selectedUser?.userName }}</div>
+        <div
+          class="btn button back-button"
+          (click)="backToUserList()"
+          *ngIf="isSmallScreen"
+        >
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+      </div>
+      <app-chat-box [selectedUser]="selectedUser"></app-chat-box>
+    </div>
+  </div>
+</div>

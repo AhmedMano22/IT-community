@@ -2,7 +2,7 @@
   "workbench.startupEditor": "none",
   "editor.fontFamily": "JetBrains Mono",
   "editor.fontLigatures": "'calt', 'ss01', 'cv06', 'cv07'",
-  "editor.fontSize": 18,
+  "editor.fontSize": 16,
   // "editor.fontLigatures": true,
   "editor.formatOnPaste": false,
   "editor.formatOnSave": true,
